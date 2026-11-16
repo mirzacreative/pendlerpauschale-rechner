@@ -1,0 +1,334 @@
+<!--
+  DRAFT — verified, ready for auto-publish (user gate 2026-11-07: "Roz khud publish kar dun, review ka wait nahi").
+  Target repo: mirzacreative/pendlerpauschale-rechner
+  Target filename: fahrtenbuch-vs-pendlerpauschale.html
+  Target URL: https://mirzacreative.github.io/pendlerpauschale-rechner/fahrtenbuch-vs-pendlerpauschale.html
+  After upload: add the URL to sitemap.xml (lastmod 2026-11-16), link it from index.html,
+  pendlerpauschale-2026-neuerung.html and pendlerpauschale-steuererklaerung-anlage-n.html,
+  request indexing (Search Console signed in as aivideos146@gmail.com in this run's browser session).
+  NOTE: follows the site's existing guide format (pendlerpauschale-teilzeit-2026.html).
+  It has NO og:image because the site currently has no social-image asset — see MASTER-PLAN.md fix #1.
+  All figures use the site's own published rules, verified against the live pages 2026-11-14:
+  ab 2026 einheitlich 0,38 €/km ab dem ersten Kilometer (pendlerpauschale-2026-neuerung.html);
+  Arbeitnehmer-Pauschbetrag 1.230 €, 230 Arbeitstage als Richtwert bei Vollzeit,
+  Homeoffice-Pauschale 6 €/Tag, max. 1.260 €/Jahr. 4.500-€-Obergrenze für Nicht-Autofahrer.
+  Rechenbeispiele (in Python geprüft): Pendlerpauschale 30 km × 0,38 € × 230 Tage = 2.622 €;
+  Dienstwagen 40.000 € Listenpreis: 1%-Regel 400 €/Monat + 0,03%-Regel 360 €/Monat (30 km)
+  = 760 €/Monat = 9.120 €/Jahr geldwerter Vorteil; Fahrtenbuch-Beispiel: Gesamtkosten
+  9.600 €/Jahr, 20 % privat = 1.920 € statt 9.120 €, also 7.200 € weniger zu versteuernder
+  Vorteil (bei 30 % Grenzsteuersatz ca. 2.160 € Steuerersparnis). Zweites Beispiel:
+  Dienstwagen 25.000 €, 10 km: 250 € + 75 € = 325 €/Monat = 3.900 €/Jahr; Fahrtenbuch
+  7.200 € Gesamtkosten × 10 % privat = 720 €.
+  Keyword basis: gap hypothesis (no measured Search Console numbers supplied for this keyword).
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahrtenbuch vs. Pendlerpauschale 2026: Vergleich</title>
+<meta name="description" content="Fahrtenbuch oder Pendlerpauschale 2026? Vergleich mit Beispielen: 0,38 €/km, 1%-Regel und 0,03%-Regel, Homeoffice-Pauschale und wann sich was lohnt.">
+<meta name="keywords" content="fahrtenbuch vs pendlerpauschale, fahrtenbuch oder pendlerpauschale, fahrtenbuch dienstwagen 2026, 1 prozent regel fahrtenbuch, pendlerpauschale dienstwagen">
+<link rel="canonical" href="https://mirzacreative.github.io/pendlerpauschale-rechner/fahrtenbuch-vs-pendlerpauschale.html">
+<link rel="alternate" hreflang="de" href="https://mirzacreative.github.io/pendlerpauschale-rechner/fahrtenbuch-vs-pendlerpauschale.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0e1a3a">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PendlerRechner">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Fahrtenbuch vs. Pendlerpauschale 2026: Vergleich">
+<meta property="og:description" content="Fahrtenbuch oder Pendlerpauschale? 0,38 €/km ab dem ersten Kilometer gegen 1%-Regel und Fahrtenbuch – mit zwei Beispielrechnungen und Entscheidungshilfe.">
+<meta property="og:url" content="https://mirzacreative.github.io/pendlerpauschale-rechner/fahrtenbuch-vs-pendlerpauschale.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Fahrtenbuch vs. Pendlerpauschale 2026: Vergleich">
+<meta name="twitter:description" content="Fahrtenbuch oder Pendlerpauschale 2026: 0,38 €/km, 1%-Regel und 0,03%-Regel im Vergleich – mit Beispielen, wann sich das Fahrtenbuch lohnt.">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mirzacreative.github.io/pendlerpauschale-rechner/#website",
+      "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/",
+      "name": "PendlerRechner",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://mirzacreative.github.io/pendlerpauschale-rechner/fahrtenbuch-vs-pendlerpauschale.html#article",
+      "headline": "Fahrtenbuch vs. Pendlerpauschale 2026: Was lohnt sich für wen?",
+      "description": "Fahrtenbuch oder Pendlerpauschale 2026? Der Vergleich: 0,38 € pro Kilometer gegen 1%-Regel und Fahrtenbuch beim Dienstwagen – mit Beispielrechnungen und Entscheidungshilfe.",
+      "inLanguage": "de",
+      "datePublished": "2026-11-16",
+      "dateModified": "2026-11-16",
+      "author": { "@type": "Organization", "name": "PendlerRechner", "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/" },
+      "publisher": { "@type": "Organization", "name": "PendlerRechner", "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/" },
+      "mainEntityOfPage": "https://mirzacreative.github.io/pendlerpauschale-rechner/fahrtenbuch-vs-pendlerpauschale.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Start","item":"https://mirzacreative.github.io/pendlerpauschale-rechner/"},
+        {"@type":"ListItem","position":2,"name":"Fahrtenbuch vs. Pendlerpauschale 2026","item":"https://mirzacreative.github.io/pendlerpauschale-rechner/fahrtenbuch-vs-pendlerpauschale.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Brauche ich ein Fahrtenbuch, wenn ich die Pendlerpauschale nutze?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nein. Für die Pendlerpauschale genügen Entfernung und Zahl der Pendeltage – ein Fahrtenbuch im steuerlichen Sinne ist nicht nötig. Ein einfaches Fahrtagebuch (welche Tage Sie gefahren sind) hilft allerdings als Nachweis gegenüber dem Finanzamt. Ein echtes Fahrtenbuch brauchen Sie nur, wenn Sie einen Dienstwagen privat nutzen und statt der 1%-Regel die tatsächliche Privatnutzung versteuern wollen." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wann lohnt sich ein Fahrtenbuch statt der 1%-Regel?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ein Fahrtenbuch lohnt sich, wenn Sie den Dienstwagen wenig privat nutzen und das Auto teuer ist. Beispiel: Dienstwagen mit 40.000 € Listenpreis, 30 km Arbeitsweg – die 1%-Regel plus 0,03%-Regel ergibt 9.120 € geldwerten Vorteil im Jahr. Zeigt das Fahrtenbuch nur 20 % Privatnutzung bei 9.600 € Gesamtkosten, sind es nur 1.920 € – also 7.200 € weniger zu versteuernder Vorteil." }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich die Pendlerpauschale auch mit Dienstwagen ansetzen?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja. Die Pendlerpauschale von 0,38 € pro Kilometer ab dem ersten Kilometer steht Ihnen auch mit Dienstwagen als Werbungskosten zu – sie mindert den steuerpflichtigen Vorteil aus den Fahrten zur ersten Tätigkeitsstätte. Das gilt sowohl bei der 1%-Regel als auch beim Fahrtenbuch." }
+        },
+        {
+          "@type": "Question",
+          "name": "Was muss ein ordnungsgemäßes Fahrtenbuch enthalten?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ein ordnungsgemäßes Fahrtenbuch muss lückenlos und zeitnah geführt sein: Datum, Kilometerstand zu Beginn und Ende jeder Fahrt, Ziel und Anlass jeder Fahrt, bei Privatfahrten genügt der Vermerk 'privat'. Nachträgliche Änderungen, Schätzungen oder Lücken führen dazu, dass das Finanzamt das Fahrtenbuch verwirft und die 1%-Regel anwendet." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="PendlerRechner Logo" width="38" height="38">PendlerRechner</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Rechner</a></li>
+        <li><a href="pendlerpauschale-2026-neuerung.html">Neuerung 2026</a></li>
+        <li><a href="pendlerpauschale-teilzeit-2026.html">Teilzeit 2026</a></li>
+        <li><a href="homeoffice-pendlerpauschale-2026.html">Homeoffice 2026</a></li>
+        <li><a href="fahrtenbuch-vs-pendlerpauschale.html" class="active">Fahrtenbuch vs. Pauschale</a></li>
+        <li><a href="arbeitstage-berechnen.html">Arbeitstage</a></li>
+        <li><a href="so-funktionierts.html">So funktioniert's</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-compact">
+  <div class="container">
+    <span class="badge">DIENSTWAGEN · STEUERJAHR 2026</span>
+    <h1>Fahrtenbuch vs. Pendlerpauschale 2026: Was lohnt sich?</h1>
+    <p class="lead">Fahrtenbuch oder Pendlerpauschale — das ist die falsche Frage, wenn man sie so stellt. Die Pauschale steht fast jedem zu, das Fahrtenbuch nur Dienstwagen-Fahrern. Der Vergleich lohnt sich trotzdem: Mit einem teuren Dienstwagen und wenig Privatfahrten kann das Fahrtenbuch <strong>mehrere Tausend Euro Steuer im Jahr</strong> sparen.</p>
+  </div>
+</section>
+
+<main class="container" id="inhalt">
+  <div class="section">
+    <div class="breadcrumbs"><a href="index.html">Start</a> › Fahrtenbuch vs. Pendlerpauschale 2026</div>
+    <div class="card article">
+      <div class="toc">
+        <strong>Inhalt</strong>
+        <ul>
+          <li><a href="#antwort">Die Antwort in Kürze: Zwei verschiedene Werkzeuge</a></li>
+          <li><a href="#pauschale">Die Pendlerpauschale 2026: 0,38 €/km für alle</a></li>
+          <li><a href="#fahrtenbuch">Das Fahrtenbuch: Nur für Dienstwagen-Fahrer</a></li>
+          <li><a href="#einprozent">Die 1%-Regel und die 0,03%-Regel erklärt</a></li>
+          <li><a href="#beispiel1">Beispiel 1: Dienstwagen 40.000 €, 30 km Arbeitsweg</a></li>
+          <li><a href="#beispiel2">Beispiel 2: Dienstwagen 25.000 €, 10 km Arbeitsweg</a></li>
+          <li><a href="#vergleich">Vergleichstabelle: Pauschale, 1%-Regel und Fahrtenbuch</a></li>
+          <li><a href="#lohnt">Wann lohnt sich das Fahrtenbuch?</a></li>
+          <li><a href="#fuehren">Fahrtenbuch richtig führen: Die 4 Anforderungen</a></li>
+          <li><a href="#homeoffice">Pendlerpauschale und Homeoffice kombinieren</a></li>
+          <li><a href="#anlage-n">So tragen Sie beides in der Anlage N ein</a></li>
+          <li><a href="#fehler">Die 5 häufigsten Fehler</a></li>
+          <li><a href="#faq">Häufige Fragen</a></li>
+        </ul>
+      </div>
+
+      <h2 id="antwort">Die Antwort in Kürze: Zwei verschiedene Werkzeuge</h2>
+      <p>Die Pendlerpauschale und das Fahrtenbuch lösen zwei verschiedene Probleme — und das ist der Punkt, an dem die meisten Vergleiche schiefgehen. Die <strong>Pendlerpauschale</strong> ist ein Werbungskostenabzug für den Weg zur Arbeit: Seit 2026 gilt <strong>0,38&nbsp;€ pro Kilometer ab dem ersten Kilometer</strong> der einfachen Strecke, mal die Zahl Ihrer Pendeltage. Sie steht fast jedem Arbeitnehmer zu — mit eigenem Auto, mit dem Fahrrad, mit Bus und Bahn, und auch mit Dienstwagen. Das <strong>Fahrtenbuch</strong> dagegen betrifft nur die private Nutzung eines <strong>Dienstwagens</strong>: Wer einen Firmenwagen auch privat fahren darf, muss den privaten Anteil versteuern — entweder pauschal nach der <strong>1%-Regel</strong> (plus 0,03%-Regel für den Arbeitsweg) oder exakt nach Fahrtenbuch.</p>
+      <p>Die beiden Instrumente schließen sich also nicht aus, sondern ergänzen sich: Auch mit Dienstwagen und Fahrtenbuch können Sie die Pendlerpauschale als Werbungskosten ansetzen. Die eigentliche Entscheidung lautet daher nicht "Fahrtenbuch <em>oder</em> Pendlerpauschale", sondern "Fahrtenbuch <em>oder</em> 1%-Regel" — und die Pendlerpauschale nehmen Sie in beiden Fällen mit. Wer <strong>keinen Dienstwagen</strong> hat, braucht gar kein Fahrtenbuch: Für Sie ist die Pendlerpauschale das einzige Instrument, und die einzige Alternative ist der Nachweis tatsächlicher ÖPNV-Ticketkosten, falls die höher sind. Alle Details zur Pauschale finden Sie in unserem Artikel zur <a href="pendlerpauschale-2026-neuerung.html">Pendlerpauschale-Neuerung 2026</a>.</p>
+      <p>Ein häufiger Irrtum zum Schluss: Ein einfaches Notizbuch, in dem Sie festhalten, an welchen Tagen Sie zur Arbeit gefahren sind, ist kein steuerliches Fahrtenbuch — aber es ist ein sehr nützlicher <strong>Nachweis für die Pendlerpauschale</strong>. Das Finanzamt akzeptiert die Pauschale in der Regel ohne Belege, fragt bei hohen Beträgen aber gelegentlich nach. Ein solches Fahrtagebuch schützt Sie dann vor Nachfragen. Wie Sie Ihre Tage plausibel belegen, steht in unserer Anleitung zur <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Pendlerpauschale in der Steuererklärung: Anlage&nbsp;N</a>.</p>
+
+      <h2 id="pauschale">Die Pendlerpauschale 2026: 0,38 €/km für alle</h2>
+      <p>Die Pendlerpauschale — offiziell Entfernungspauschale — ist der einfachste Steuerabzug für Pendler: keine Belege, keine Tankquittungen, nur zwei Zahlen. Seit dem Steuerjahr 2026 gilt eine einfache Regel: <strong>0,38&nbsp;€ pro Kilometer ab dem ersten Kilometer</strong> der einfachen Strecke zwischen Wohnung und erster Tätigkeitsstätte. Keine Staffelung mehr, keine Knickstelle bei Kilometer&nbsp;21 — ein Rechenschritt genügt: volle Kilometer × 0,38&nbsp;€ × Pendeltage.</p>
+      <p>Bei Vollzeit sind das in der Regel <strong>230 Pendeltage</strong> im Jahr. Ein Beispiel: 30&nbsp;km einfache Strecke, 230 Tage im Büro — das ergibt <strong>2.622&nbsp;€ Pendlerpauschale</strong> im Jahr (30 × 0,38&nbsp;€ × 230). Bei 15&nbsp;km sind es 1.311&nbsp;€, bei 25&nbsp;km 2.185&nbsp;€. Die Pauschale wirkt sich steuermindernd aus, sobald Ihre gesamten Werbungskosten über dem <strong>Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€</strong> liegen — der Pauschbetrag wird jedem automatisch gewährt, erst was darüber liegt, senkt Ihre Steuer. Rechnen Sie Ihr eigenes Modell mit unserem <a href="index.html">Pendlerpauschale-Rechner 2026</a> nach.</p>
+      <p>Zwei Grenzen sollten Sie kennen. Erstens: Wer <strong>kein eigenes Kraftfahrzeug</strong> nutzt (ÖPNV, Fahrrad, Mitfahrer), kann die Pendlerpauschale nur bis zu <strong>4.500&nbsp;€</strong> im Jahr ansetzen — höhere tatsächliche ÖPNV-Ticketkosten dürfen aber angesetzt werden. Autofahrer sind von dieser Grenze nicht betroffen. Zweitens: Die alte Staffel — 0,30&nbsp;€ pro Kilometer für die ersten 20&nbsp;km und 0,38&nbsp;€ ab dem 21.&nbsp;km — galt von 2022 bis 2025 und ist seit 2026 Geschichte. Wer noch mit der alten Staffel rechnet, verschenkt Geld: Bei 10&nbsp;km und 138 Pendeltagen waren das nach der alten Regel 414&nbsp;€, nach der neuen Regel sind es <strong>524,40&nbsp;€</strong>.</p>
+
+      <h2 id="fahrtenbuch">Das Fahrtenbuch: Nur für Dienstwagen-Fahrer</h2>
+      <p>Ein Fahrtenbuch im steuerlichen Sinne ist ein lückenloses Protokoll aller Fahrten mit dem Dienstwagen — beruflich, privat und auf dem Weg zur Arbeit. Sein Zweck: Statt des pauschalen geldwerten Vorteils nach der 1%-Regel wird nur der <strong>tatsächliche private Nutzungsanteil</strong> versteuert. Das Finanzamt akzeptiert das Fahrtenbuch nur, wenn es vier Anforderungen erfüllt: Es muss <strong>lückenlos</strong> sein (jede Fahrt, ohne Ausnahme), <strong>zeitnah</strong> geführt werden (also nicht Monate später aus dem Gedächtnis rekonstruiert), <strong>geschlossen</strong> sein (keine nachträglichen Änderungen, keine losen Blätter) und jede Fahrt muss <strong>Datum, Kilometerstand zu Beginn und Ende, Ziel und Anlass</strong> enthalten — bei Privatfahrten genügt der Vermerk "privat".</p>
+      <p>Das ist der Haken: Ein Fahrtenbuch ist Arbeit — jeden Tag, jede Fahrt, das ganze Jahr. Wer es drei Wochen schleifen lässt und dann nachträgt, riskiert, dass das Finanzamt das Fahrtenbuch komplett verwirft und die 1%-Regel anwendet — dann war die ganze Mühe umsonst. Elektronische Fahrtenbücher (per App oder fest eingebautem GPS-Modul) nehmen Ihnen das Protokollieren ab, müssen aber ebenfalls manipulationssicher sein: Das System muss nachträgliche Änderungen sichtbar machen oder verhindern. Viele Arbeitgeber stellen ihren Dienstwagen-Fahrern solche Systeme zur Verfügung — fragen Sie nach, bevor Sie von Hand zu protokollieren beginnen.</p>
+      <p>Ein Fahrtenbuch lohnt sich vor allem in zwei Fällen: wenn der Dienstwagen <strong>teuer</strong> ist (hoher Listenpreis = hohe 1%-Regel) und wenn Sie ihn <strong>wenig privat</strong> nutzen (geringer Privatanteil = niedriger Vorteil nach Fahrtenbuch). Beide Beispiele weiter unten zeigen das. Bei einem günstigen Dienstwagen und vielen Privatfahrten ist die 1%-Regel dagegen oft die bequemere — und manchmal sogar die günstigere — Wahl.</p>
+
+      <h2 id="einprozent">Die 1%-Regel und die 0,03%-Regel erklärt</h2>
+      <p>Ohne Fahrtenbuch versteuert das Finanzamt die private Dienstwagen-Nutzung pauschal — mit zwei Bausteinen. Der erste Baustein ist die <strong>1%-Regel</strong>: Jeden Monat werden <strong>1&nbsp;% des Bruttolistenpreises</strong> des Fahrzeugs als geldwerter Vorteil angesetzt — unabhängig davon, wie viel Sie privat fahren. Bei einem Listenpreis von 40.000&nbsp;€ sind das 400&nbsp;€ im Monat, also 4.800&nbsp;€ im Jahr. Der zweite Baustein ist die <strong>0,03%-Regel</strong> für die Fahrten zwischen Wohnung und erster Tätigkeitsstätte: Pro Monat werden zusätzlich <strong>0,03&nbsp;% des Listenpreises je Entfernungskilometer</strong> angesetzt. Bei 40.000&nbsp;€ Listenpreis und 30&nbsp;km Arbeitsweg sind das 0,03&nbsp;% × 40.000&nbsp;€ × 30&nbsp;km = 360&nbsp;€ im Monat, also 4.320&nbsp;€ im Jahr.</p>
+      <p>Zusammen sind das <strong>760&nbsp;€ im Monat bzw. 9.120&nbsp;€ im Jahr</strong> geldwerter Vorteil — ein Betrag, der Ihr zu versteuerndes Einkommen erhöht. Bei einem Grenzsteuersatz von 30&nbsp;% kostet Sie das rund 2.736&nbsp;€ Steuer im Jahr. Die 0,03%-Regel wird übrigens nur für die Monate angesetzt, in denen Sie den Wagen für den Arbeitsweg genutzt haben — und sie entfällt ganz, wenn Sie den Dienstwagen gar nicht für den Arbeitsweg nutzen. Eine Alternative zur 0,03%-Regel gibt es seit einigen Jahren: Stattdessen können die Fahrten zur Arbeit mit <strong>0,002&nbsp;% des Listenpreises je Kilometer und tatsächlichem Fahrtag</strong> bewertet werden — das lohnt sich, wenn Sie nur an wenigen Tagen im Monat zur Arbeit fahren, etwa bei Teilzeit oder viel Homeoffice. Mehr dazu in unserem Artikel zur <a href="pendlerpauschale-teilzeit-2026.html">Pendlerpauschale bei Teilzeit 2026</a>.</p>
+      <p>Ein Sonderfall: Bei <strong>reinen Elektro-Dienstwagen</strong> gilt statt der 1%-Regel die <strong>0,25%-Regel</strong> (bei einem Bruttolistenpreis bis 70.000&nbsp;€) — der geldwerte Vorteil ist dann nur ein Viertel so hoch. Auch Plug-in-Hybride werden begünstigt (0,5%-Regel). Wer einen Elektro-Dienstwagen fährt, sollte das Fahrtenbuch besonders sorgfältig gegen die 0,25%-Regel abwägen: Der pauschale Vorteil ist dann schon so niedrig, dass sich das Führen eines Fahrtenbuchs oft nicht mehr lohnt.</p>
+
+      <h2 id="beispiel1">Beispiel 1: Dienstwagen 40.000 €, 30 km Arbeitsweg</h2>
+      <p>Ein typischer Fall: Dienstwagen mit 40.000&nbsp;€ Bruttolistenpreis, 30&nbsp;km einfache Strecke, 230 Arbeitstage im Büro, keine Elektro-Begünstigung. Zuerst die pauschale Besteuerung nach der 1%-Regel:</p>
+      <table class="data">
+        <tr><th>Position</th><th>Rechnung</th><th>Betrag pro Jahr</th></tr>
+        <tr><td>1%-Regel (Privatnutzung)</td><td>40.000 € × 1 % × 12 Monate</td><td><strong>4.800 €</strong></td></tr>
+        <tr><td>0,03%-Regel (Arbeitsweg, 30 km)</td><td>40.000 € × 0,03 % × 30 km × 12 Monate</td><td><strong>4.320 €</strong></td></tr>
+        <tr><td><strong>Geldwerter Vorteil gesamt</strong></td><td>4.800 € + 4.320 €</td><td><strong>9.120 €</strong></td></tr>
+        <tr><td>Pendlerpauschale als Werbungskosten</td><td>30 km × 0,38 € × 230 Tage</td><td><strong>− 2.622 €</strong></td></tr>
+        <tr><td><strong>Netto-Belastung (zu versteuern)</strong></td><td>9.120 € − 2.622 €</td><td><strong>6.498 €</strong></td></tr>
+      </table>
+      <p>Jetzt das Fahrtenbuch: Angenommen, die tatsächlichen Gesamtkosten des Wagens (Steuer, Versicherung, Sprit, Wartung, Wertverlust) betragen <strong>9.600&nbsp;€ im Jahr</strong>, und das Fahrtenbuch zeigt, dass nur <strong>20&nbsp;%</strong> der Fahrten privat waren (einschließlich der Fahrten zur Arbeit). Dann beträgt der geldwerte Vorteil nur <strong>1.920&nbsp;€</strong> statt 9.120&nbsp;€ — also <strong>7.200&nbsp;€ weniger</strong> zu versteuerndes Einkommen. Bei einem Grenzsteuersatz von 30&nbsp;% sind das rund <strong>2.160&nbsp;€ Steuerersparnis im Jahr</strong>. Und die Pendlerpauschale von 2.622&nbsp;€ bleibt als Werbungskosten ansetzbar und mindert den Vorteil aus den Fahrten zur Arbeit zusätzlich.</p>
+      <p>Die Lehre aus Beispiel&nbsp;1: Je teurer der Dienstwagen und je geringer der Privatanteil, desto größer der Vorteil des Fahrtenbuchs. Bei 20&nbsp;% Privatnutzung und 9.600&nbsp;€ Gesamtkosten ist das Fahrtenbuch hier fast fünfmal günstiger als die 1%-Regel. Wer dagegen 50&nbsp;% privat fährt, käme nach Fahrtenbuch auf 4.800&nbsp;€ Vorteil — immer noch deutlich weniger als 9.120&nbsp;€, aber der Abstand schrumpft.</p>
+
+      <h2 id="beispiel2">Beispiel 2: Dienstwagen 25.000 €, 10 km Arbeitsweg</h2>
+      <p>Ein zweiter Fall zeigt, wann sich das Fahrtenbuch <em>nicht</em> lohnt: Dienstwagen mit 25.000&nbsp;€ Bruttolistenpreis, nur 10&nbsp;km einfache Strecke, 230 Arbeitstage. Die pauschale Besteuerung:</p>
+      <table class="data">
+        <tr><th>Position</th><th>Rechnung</th><th>Betrag pro Jahr</th></tr>
+        <tr><td>1%-Regel (Privatnutzung)</td><td>25.000 € × 1 % × 12 Monate</td><td><strong>3.000 €</strong></td></tr>
+        <tr><td>0,03%-Regel (Arbeitsweg, 10 km)</td><td>25.000 € × 0,03 % × 10 km × 12 Monate</td><td><strong>900 €</strong></td></tr>
+        <tr><td><strong>Geldwerter Vorteil gesamt</strong></td><td>3.000 € + 900 €</td><td><strong>3.900 €</strong></td></tr>
+        <tr><td>Pendlerpauschale als Werbungskosten</td><td>10 km × 0,38 € × 230 Tage</td><td><strong>− 874 €</strong></td></tr>
+        <tr><td><strong>Netto-Belastung (zu versteuern)</strong></td><td>3.900 € − 874 €</td><td><strong>3.026 €</strong></td></tr>
+      </table>
+      <p>Mit Fahrtenbuch: Angenommen, die Gesamtkosten betragen <strong>7.200&nbsp;€ im Jahr</strong> und der Privatanteil liegt bei nur <strong>10&nbsp;%</strong> — dann beträgt der geldwerte Vorteil <strong>720&nbsp;€</strong> statt 3.900&nbsp;€, also 3.180&nbsp;€ weniger zu versteuern (bei 30&nbsp;% Grenzsteuersatz rund 954&nbsp;€ Steuerersparnis). Das ist immer noch ein deutlicher Vorteil — aber der absolute Betrag ist kleiner als in Beispiel&nbsp;1, und der Aufwand für ein lückenloses Fahrtenbuch bleibt derselbe. Wer den Wagen dagegen zu 40&nbsp;% privat nutzt, käme nach Fahrtenbuch auf 2.880&nbsp;€ Vorteil — nur noch 1.020&nbsp;€ weniger als die 1%-Regel, also rund 306&nbsp;€ Steuerersparnis im Jahr. Dann muss man ehrlich fragen, ob sich der tägliche Protokollaufwand dafür lohnt.</p>
+      <p>Die Faustregel aus beiden Beispielen: <strong>Listenpreis × Privatanteil entscheidet.</strong> Rechnen Sie vor dem Jahreswechsel einmal grob nach: Listenpreis × 1&nbsp;% × 12 plus Listenpreis × 0,03&nbsp;% × Kilometer × 12 — das ist Ihr pauschaler Vorteil. Schätzen Sie dann Ihre tatsächlichen Gesamtkosten und Ihren Privatanteil: Liegt der Fahrtenbuch-Vorteil deutlich darunter, lohnt sich das Fahrtenbuch. Liegt er nur knapp darunter, bleiben Sie bei der 1%-Regel und sparen sich die Arbeit.</p>
+
+      <h2 id="vergleich">Vergleichstabelle: Pauschale, 1%-Regel und Fahrtenbuch</h2>
+      <table class="data">
+        <tr><th></th><th>Pendlerpauschale</th><th>1%-Regel (+ 0,03%)</th><th>Fahrtenbuch</th></tr>
+        <tr><td><strong>Für wen?</strong></td><td>Alle Arbeitnehmer</td><td>Nur Dienstwagen-Fahrer</td><td>Nur Dienstwagen-Fahrer</td></tr>
+        <tr><td><strong>Was wird berechnet?</strong></td><td>Weg zur Arbeit (Werbungskosten)</td><td>Private Nutzung, pauschal</td><td>Private Nutzung, exakt</td></tr>
+        <tr><td><strong>Aufwand</strong></td><td>Sehr gering: km + Tage</td><td>Keiner: automatisch</td><td>Hoch: jede Fahrt, täglich</td></tr>
+        <tr><td><strong>Beispiel 1 (40.000 €, 30 km)</strong></td><td>2.622 € Abzug</td><td>9.120 € Vorteil</td><td>1.920 € Vorteil</td></tr>
+        <tr><td><strong>Beispiel 2 (25.000 €, 10 km)</strong></td><td>874 € Abzug</td><td>3.900 € Vorteil</td><td>720 € Vorteil</td></tr>
+        <tr><td><strong>Risiko</strong></td><td>Kaum: nur Tage belegen</td><td>Keines</td><td>Hoch: Fehler = 1%-Regel</td></tr>
+        <tr><td><strong>Kombinierbar?</strong></td><td>Ja, mit beiden</td><td>Ja, mit Pauschale</td><td>Ja, mit Pauschale</td></tr>
+      </table>
+      <p>Die Tabelle zeigt den Kern des Vergleichs: Die Pendlerpauschale ist ein Abzug, die 1%-Regel und das Fahrtenbuch sind zwei Wege, denselben Vorteil zu bewerten. Die Pauschale nehmen Sie immer mit — die Entscheidung zwischen 1%-Regel und Fahrtenbuch treffen Sie einmal im Jahr, vor Beginn des Steuerjahres, und sie gilt dann für das ganze Jahr. Ein Wechsel mitten im Jahr ist in der Regel nicht möglich.</p>
+
+      <h2 id="lohnt">Wann lohnt sich das Fahrtenbuch?</h2>
+      <p>Das Fahrtenbuch lohnt sich, wenn drei Bedingungen zusammenkommen. <strong>Erstens: hoher Listenpreis.</strong> Je teurer der Dienstwagen, desto höher die 1%-Regel — und desto mehr gibt es durch ein Fahrtenbuch zu sparen. Bei einem Listenpreis von 60.000&nbsp;€ sind allein die 1%-Regel schon 7.200&nbsp;€ im Jahr. <strong>Zweitens: geringer Privatanteil.</strong> Wer den Wagen fast nur beruflich nutzt und privat kaum fährt — etwa weil ein Zweitwagen für die Familie da ist —, versteuert nach Fahrtenbuch nur einen kleinen Anteil der Gesamtkosten. <strong>Drittens: hohe Gesamtkosten, niedriger Privatanteil.</strong> Auch teure Sprit- und Wartungskosten helfen dem Fahrtenbuch nicht, wenn der Privatanteil hoch ist — der Vorteil ist immer Privatanteil mal Gesamtkosten.</p>
+      <p>Umgekehrt lohnt sich das Fahrtenbuch <strong>nicht</strong>, wenn der Dienstwagen günstig ist, der Privatanteil hoch liegt (über 40–50&nbsp;%), oder wenn Sie einen Elektro-Dienstwagen mit 0,25%-Regel fahren — dann ist der pauschale Vorteil schon so niedrig, dass das Fahrtenbuch kaum noch etwas spart. Und: Wer das Fahrtenbuch nicht diszipliniert führen kann oder will, sollte es gar nicht erst anfangen. Ein verworfenes Fahrtenbuch kostet nicht nur die investierte Zeit, sondern auch die Steuerersparnis — das Finanzamt wendet dann die 1%-Regel an, als hätte es nie ein Fahrtenbuch gegeben.</p>
+      <p>Ein praktischer Tipp: Führen Sie probeweise <strong>drei Monate lang ein Fahrtenbuch</strong>, bevor Sie sich für das ganze Jahr entscheiden. Nach drei Monaten kennen Sie Ihren Privatanteil ziemlich genau und können hochrechnen, ob sich das Fahrtenbuch lohnt. Viele Arbeitgeber akzeptieren einen Wechsel zur 1%-Regel auch noch zu Jahresbeginn — klären Sie das aber vorher mit Ihrer Lohnbuchhaltung, denn der Arbeitgeber muss die Versteuerung in der Lohnabrechnung umstellen.</p>
+
+      <h2 id="fuehren">Fahrtenbuch richtig führen: Die 4 Anforderungen</h2>
+      <ol>
+        <li><strong>Lückenlos:</strong> Jede Fahrt muss erfasst sein — beruflich, privat und zur Arbeit. Eine einzige fehlende Fahrt kann das ganze Fahrtenbuch unglaubwürdig machen. Auch Tank- und Werkstattfahrten gehören dazu.</li>
+        <li><strong>Zeitnah:</strong> Tragen Sie jede Fahrt am selben Tag ein — oder nutzen Sie ein elektronisches Fahrtenbuch, das die Fahrt automatisch erfasst. Wer Wochen später aus dem Kalender rekonstruiert, führt kein ordnungsgemäßes Fahrtenbuch.</li>
+        <li><strong>Geschlossen und unveränderbar:</strong> Keine nachträglichen Korrekturen ohne sichtbare Änderungshistorie, keine losen Blätter, keine Excel-Tabelle, in der man unbemerkt Werte ändern kann. Gebundene Bücher oder zertifizierte elektronische Systeme erfüllen diese Anforderung.</li>
+        <li><strong>Vollständige Angaben:</strong> Datum, Kilometerstand am Anfang und Ende jeder Fahrt, Reiseziel und Reisezweck bei beruflichen Fahrten, bei Privatfahrten genügt der Vermerk "privat" plus Kilometerstand. Auch der Kilometerstand am Jahresanfang und Jahresende muss dokumentiert sein.</li>
+      </ol>
+      <p>Zusätzlich sollten Sie alle <strong>Belege für die Gesamtkosten</strong> sammeln: Tankquittungen, Versicherungsbeiträge, Steuerbescheide, Werkstattrechnungen und die Abschreibung des Fahrzeugs. Das Finanzamt prüft bei Fahrtenbüchern gerne nach — wer die Kosten nicht belegen kann, verliert den Vorteil. Unser Tipp: Legen Sie einen Ordner (digital oder Papier) an, in dem alle Belege des Jahres landen — dann ist die Steuererklärung im Folgejahr eine Formsache.</p>
+
+      <h2 id="homeoffice">Pendlerpauschale und Homeoffice kombinieren</h2>
+      <p>Ein Tag zählt entweder als Pendeltag oder als Homeoffice-Tag — nie als beides. Für Homeoffice-Tage gibt es stattdessen die <strong>Homeoffice-Pauschale von 6&nbsp;€ pro Tag</strong>, maximal 1.260&nbsp;€ im Jahr. Ein Beispiel mit Dienstwagen: 30&nbsp;km Arbeitsweg, drei Tage pro Woche im Büro, zwei Tage im Homeoffice — rund 138 Pendeltage und 92 Homeoffice-Tage im Jahr. Die Pendlerpauschale beträgt dann 30&nbsp;km × 0,38&nbsp;€ × 138 Tage = <strong>1.573,20&nbsp;€</strong>, die Homeoffice-Pauschale 92 Tage × 6&nbsp;€ = <strong>552&nbsp;€</strong> — zusammen <strong>2.125,20&nbsp;€ Werbungskosten</strong>. Das liegt deutlich über dem Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€ und mindert — zusätzlich zum Fahrtenbuch-Vorteil — Ihre Steuer. Wie sich beide Pauschalen kombinieren lassen, zeigt unser Artikel zu <a href="homeoffice-pendlerpauschale-2026.html">Homeoffice und Pendlerpauschale 2026</a>.</p>
+      <p>Beachten Sie: Bei der 0,03%-Regel wird der Vorteil für den Arbeitsweg nur für die Monate angesetzt, in denen Sie den Dienstwagen für den Arbeitsweg genutzt haben. Wer nur an wenigen Tagen im Monat zur Arbeit fährt, kann alternativ die <strong>0,002%-Regel je Fahrtag</strong> wählen — das ist bei Teilzeit und viel Homeoffice oft günstiger. Die Details dazu finden Sie in unserem Artikel zur <a href="pendlerpauschale-teilzeit-2026.html">Pendlerpauschale bei Teilzeit 2026</a>.</p>
+
+      <h2 id="anlage-n">So tragen Sie beides in der Anlage N ein</h2>
+      <p>Die Pendlerpauschale gehört als Werbungskosten in die <strong>Anlage&nbsp;N</strong> zur Einkommensteuererklärung. So gehen Sie vor:</p>
+      <ol>
+        <li><strong>Anlage&nbsp;N öffnen</strong> und zum Abschnitt <em>Wege zwischen Wohnung und erster Tätigkeitsstätte</em> scrollen.</li>
+        <li><strong>Entfernung eintragen:</strong> die einfache Strecke in vollen Kilometern angeben — nicht die Hin- und Rückfahrt, nur eine Strecke.</li>
+        <li><strong>Pendeltage eintragen:</strong> nur die Tage, an denen Sie tatsächlich gefahren sind. ELSTER berechnet den Betrag automatisch mit 0,38&nbsp;€ pro Kilometer.</li>
+        <li><strong>Dienstwagen angeben:</strong> Der geldwerte Vorteil aus der 1%-Regel steht bereits auf Ihrer Lohnsteuerbescheinigung — Sie müssen ihn nicht selbst eintragen. Beim Fahrtenbuch tragen Sie den ermittelten privaten Nutzungsanteil ein und legen das Fahrtenbuch bei — die Lohnbuchhaltung Ihres Arbeitgebers muss die Versteuerung entsprechend umstellen.</li>
+        <li><strong>Homeoffice-Tage eintragen:</strong> die Zahl der Homeoffice-Tage im entsprechenden Feld für Werbungskosten angeben — ELSTER rechnet 6&nbsp;€ pro Tag, höchstens 1.260&nbsp;€ im Jahr.</li>
+        <li><strong>Prüfen:</strong> Vergleichen Sie das Ergebnis mit unserem <a href="index.html">Pendlerpauschale-Rechner</a> und Ihrer eigenen Rechnung (Kilometer × 0,38&nbsp;€ × Tage). Stimmen die Werte überein, ist alles korrekt eingetragen.</li>
+      </ol>
+      <p>Die ausführliche Schritt-für-Schritt-Anleitung — inklusive ELSTER-Screenshots in Worten und der häufigsten Nachfragen des Finanzamts — finden Sie in unserer Anleitung zur <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Pendlerpauschale in der Steuererklärung: Anlage&nbsp;N</a>. Die Steuererklärung für das Steuerjahr 2026 geben Sie im Jahr 2027 ab.</p>
+
+      <h2 id="fehler">Die 5 häufigsten Fehler</h2>
+      <ol>
+        <li><strong>Fahrtenbuch und Pendlerpauschale verwechselt:</strong> Die Pauschale braucht kein Fahrtenbuch — und das Fahrtenbuch ersetzt nicht die Pauschale. Beide laufen nebeneinander: Die Pauschale mindert die Steuer, das Fahrtenbuch bewertet den Dienstwagen-Vorteil.</li>
+        <li><strong>Fahrtenbuch nachträglich geführt:</strong> Wer das Fahrtenbuch erst im Dezember für das ganze Jahr ausfüllt, führt kein ordnungsgemäßes Fahrtenbuch. Das Finanzamt verwirft es und wendet die 1%-Regel an.</li>
+        <li><strong>Denselben Tag doppelt gezählt:</strong> Ein Tag ist entweder ein Pendeltag oder ein Homeoffice-Tag — nie beides. Wer 138 Pendeltage und zusätzlich 138 Homeoffice-Tage ansetzt, hat 276 Arbeitstage angegeben und wird nachgefragt.</li>
+        <li><strong>Alte 0,30-€-Staffel verwendet:</strong> Ab 2026 gilt 0,38&nbsp;€ ab dem ersten Kilometer. Die Staffel mit 0,30&nbsp;€ für die ersten 20&nbsp;km galt nur bis 2025.</li>
+        <li><strong>0,03%-Regel trotz weniger Fahrtage:</strong> Wer nur an wenigen Tagen im Monat mit dem Dienstwagen zur Arbeit fährt, sollte die 0,002%-Regel je Fahrtag prüfen — die 0,03%-Regel pauschaliert den ganzen Monat und ist dann teurer.</li>
+      </ol>
+      <div class="info"><strong>Unser Tipp:</strong> Entscheiden Sie sich vor Jahresbeginn: Fahrtenbuch oder 1%-Regel — und führen Sie das Fahrtenbuch probeweise drei Monate, bevor Sie sich festlegen. Berechnen Sie Ihre persönliche Kombination direkt mit unserem <a href="index.html">Pendlerpauschale-Rechner 2026</a>, bevor Sie die Erklärung absenden.</div>
+      <p class="small">Hinweis: Dieser Artikel dient der allgemeinen Information und stellt keine Steuerberatung dar. Alle Angaben ohne Gewähr; maßgeblich sind die gesetzlichen Regelungen und Ihr Steuerbescheid.</p>
+    </div>
+
+    <h2 id="faq">Häufige Fragen</h2>
+    <details>
+      <summary>Brauche ich ein Fahrtenbuch, wenn ich die Pendlerpauschale nutze?</summary>
+      <p>Nein. Für die Pendlerpauschale genügen Entfernung und Zahl der Pendeltage – ein Fahrtenbuch im steuerlichen Sinne ist nicht nötig. Ein einfaches Fahrtagebuch (welche Tage Sie gefahren sind) hilft allerdings als Nachweis gegenüber dem Finanzamt. Ein echtes Fahrtenbuch brauchen Sie nur, wenn Sie einen Dienstwagen privat nutzen und statt der 1%-Regel die tatsächliche Privatnutzung versteuern wollen.</p>
+    </details>
+    <details>
+      <summary>Wann lohnt sich ein Fahrtenbuch statt der 1%-Regel?</summary>
+      <p>Ein Fahrtenbuch lohnt sich, wenn Sie den Dienstwagen wenig privat nutzen und das Auto teuer ist. Beispiel: Dienstwagen mit 40.000 € Listenpreis, 30 km Arbeitsweg – die 1%-Regel plus 0,03%-Regel ergibt 9.120 € geldwerten Vorteil im Jahr. Zeigt das Fahrtenbuch nur 20 % Privatnutzung bei 9.600 € Gesamtkosten, sind es nur 1.920 € – also 7.200 € weniger zu versteuernder Vorteil.</p>
+    </details>
+    <details>
+      <summary>Kann ich die Pendlerpauschale auch mit Dienstwagen ansetzen?</summary>
+      <p>Ja. Die Pendlerpauschale von 0,38 € pro Kilometer ab dem ersten Kilometer steht Ihnen auch mit Dienstwagen als Werbungskosten zu – sie mindert den steuerpflichtigen Vorteil aus den Fahrten zur ersten Tätigkeitsstätte. Das gilt sowohl bei der 1%-Regel als auch beim Fahrtenbuch.</p>
+    </details>
+    <details>
+      <summary>Was muss ein ordnungsgemäßes Fahrtenbuch enthalten?</summary>
+      <p>Ein ordnungsgemäßes Fahrtenbuch muss lückenlos und zeitnah geführt sein: Datum, Kilometerstand zu Beginn und Ende jeder Fahrt, Ziel und Anlass jeder Fahrt, bei Privatfahrten genügt der Vermerk "privat". Nachträgliche Änderungen, Schätzungen oder Lücken führen dazu, dass das Finanzamt das Fahrtenbuch verwirft und die 1%-Regel anwendet.</p>
+    </details>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.svg" alt="PendlerRechner Logo" width="34" height="34">PendlerRechner</div>
+        <p>Der unabhängige Pendlerpauschale-Rechner für 2026: Entfernungspauschale berechnen, Neuregelung verstehen, Steuerersparnis schätzen.</p>
+      </div>
+      <div>
+        <h4>Rechner &amp; Ratgeber</h4>
+        <ul>
+          <li><a href="index.html">Pendlerpauschale-Rechner</a></li>
+          <li><a href="pendlerpauschale-2026-neuerung.html">Neuerung 2026</a></li>
+          <li><a href="pendlerpauschale-teilzeit-2026.html">Teilzeit 2026</a></li>
+          <li><a href="homeoffice-pendlerpauschale-2026.html">Homeoffice 2026</a></li>
+          <li><a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch vs. Pauschale</a></li>
+          <li><a href="pendlerpauschale-steuererklaerung-anlage-n.html">Steuererklärung: Anlage N</a></li>
+          <li><a href="arbeitstage-berechnen.html">Arbeitstage berechnen</a></li>
+          <li><a href="so-funktionierts.html">So funktioniert's</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="cookie-richtlinie.html">Cookie-Richtlinie</a></li>
+          <li><a href="haftungsausschluss.html">Haftungsausschluss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="jahr">2026</span> PendlerRechner. Alle Rechte vorbehalten.</span>
+      <span>Unverbindliche Schätzung – keine Steuerberatung.</span>
+    </div>
+  </div>
+</footer>
+<div class="disclaimer-strip">Alle Berechnungen sind unverbindlich und ohne Gewähr – keine Steuerberatung.</div>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
+  <div class="container">
+    <p>Wir verwenden nur technisch notwendige Speicherung (z.&nbsp;B. Ihre Cookie-Auswahl). Es findet kein Tracking statt. Details in der <a href="cookie-richtlinie.html">Cookie-Richtlinie</a>.</p>
+    <div class="btn-row" style="margin-top:0">
+      <button class="btn" id="cookie-accept">Alle akzeptieren</button>
+      <button class="btn btn-ghost" id="cookie-necessary">Nur notwendige</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
