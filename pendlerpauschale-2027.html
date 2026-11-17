@@ -1,0 +1,315 @@
+<!--
+  DRAFT — verified, ready for auto-publish (user gate 2026-11-07: "Roz khud publish kar dun, review ka wait nahi").
+  Target repo: mirzacreative/pendlerpauschale-rechner
+  Target filename: pendlerpauschale-2027.html
+  Target URL: https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-2027.html
+  After upload: add the URL to sitemap.xml (lastmod 2026-11-17), link it from index.html and
+  pendlerpauschale-2026-neuerung.html, request indexing (Search Console signed in as
+  aivideos146@gmail.com in this run's browser session).
+  NOTE: follows the site's existing guide format (fahrtenbuch-vs-pendlerpauschale.html).
+  It has NO og:image because the site currently has no social-image asset — see MASTER-PLAN.md fix #1.
+  HONESTY RULE FOR THIS POST: no 2027 rate, law, date or Bundestag decision is invented.
+  As of November 2026 the 2027 rules are NOT yet fixed — the post says so explicitly.
+  All figures use the site's own published 2026 rules, verified against the live pages:
+  ab 2026 einheitlich 0,38 €/km ab dem ersten Kilometer (pendlerpauschale-2026-neuerung.html);
+  Arbeitnehmer-Pauschbetrag 1.230 €, 230 Arbeitstage als Richtwert bei Vollzeit,
+  Homeoffice-Pauschale 6 €/Tag, max. 1.260 €/Jahr. 4.500-€-Obergrenze für Nicht-Autofahrer.
+  Rechenbeispiele (in Python geprüft, alle mit dem BEKANNTEN Satz 2026, so gekennzeichnet):
+  Pendlerpauschale 25 km × 0,38 € × 230 Tage = 2.185 €; Hybrid 25 km × 138 Tage = 1.311 €
+  plus 92 Homeoffice-Tage × 6 € = 552 €, zusammen 1.863 €. Entfernungstabelle 2026:
+  10 km = 874 €, 15 km = 1.311 €, 25 km = 2.185 €, 30 km = 2.622 €, 40 km = 3.496 €,
+  50 km = 4.370 € (jeweils × 230 Tage × 0,38 €).
+  Keyword basis: gap hypothesis (no measured Search Console numbers supplied for this keyword).
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendlerpauschale 2027: Was schon feststeht</title>
+<meta name="description" content="Pendlerpauschale 2027: Die Regeln für 2027 stehen noch nicht fest. Was heute schon sicher ist, was Sie beobachten sollten und wie Sie jetzt planen.">
+<meta name="keywords" content="pendlerpauschale 2027, pendlerpauschale 2027 satz, entfernungspauschale 2027, pendlerpauschale änderung 2027, pendlerpauschale neu 2027">
+<link rel="canonical" href="https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-2027.html">
+<link rel="alternate" hreflang="de" href="https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-2027.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0e1a3a">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PendlerRechner">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Pendlerpauschale 2027: Was schon feststeht">
+<meta property="og:description" content="Pendlerpauschale 2027: Der Satz für 2027 steht noch nicht fest. Die bekannte Basis 2026, was schon sicher ist und wie Sie Ihren Arbeitsweg jetzt planen.">
+<meta property="og:url" content="https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-2027.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pendlerpauschale 2027: Was schon feststeht">
+<meta name="twitter:description" content="Pendlerpauschale 2027: Was für 2027 schon sicher ist, was noch offen ist — und wie Sie mit dem bekannten Satz 2026 richtig planen.">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mirzacreative.github.io/pendlerpauschale-rechner/#website",
+      "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/",
+      "name": "PendlerRechner",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-2027.html#article",
+      "headline": "Pendlerpauschale 2027: Was schon feststeht — und was noch nicht",
+      "description": "Pendlerpauschale 2027: Stand November 2026 sind die Regeln für 2027 noch nicht festgelegt. Was schon sicher ist, was Sie beobachten sollten und wie Sie mit dem bekannten Satz 2026 planen.",
+      "inLanguage": "de",
+      "datePublished": "2026-11-17",
+      "dateModified": "2026-11-17",
+      "author": { "@type": "Organization", "name": "PendlerRechner", "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/" },
+      "publisher": { "@type": "Organization", "name": "PendlerRechner", "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/" },
+      "mainEntityOfPage": "https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-2027.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Start","item":"https://mirzacreative.github.io/pendlerpauschale-rechner/"},
+        {"@type":"ListItem","position":2,"name":"Pendlerpauschale 2027","item":"https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-2027.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Gilt 2027 weiterhin 0,38 € pro Kilometer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Das steht noch nicht fest. Stand November 2026 ist kein Satz für 2027 beschlossen. Der Satz von 0,38 € pro Kilometer ab dem ersten Kilometer gilt für das Steuerjahr 2026. Ob er 2027 gleich bleibt, steigt oder sinkt, entscheidet sich erst im Gesetzgebungsverfahren — planen Sie bis dahin mit dem bekannten Satz 2026, aber rechnen Sie nicht fest damit." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wann stehen die Regeln für die Pendlerpauschale 2027 fest?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Einen festen Termin gibt es nicht. Die Regeln entstehen im Gesetzgebungsverfahren — Bundestag und Bundesrat — und werden danach in einem BMF-Schreiben konkretisiert. Sobald ein Satz für 2027 beschlossen ist, aktualisieren wir unsere Übersicht zur Pendlerpauschale-Neuerung und unseren Rechner." }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kann ich jetzt schon für 2027 tun?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Das Wichtigste ist, Ihre Pendeltage ab sofort sauber zu dokumentieren: Entfernung in vollen Kilometern und die Zahl der Tage, an denen Sie tatsächlich zur Arbeit gefahren sind. Damit können Sie die Pendlerpauschale für 2027 sofort berechnen, sobald der Satz feststeht — egal ob er bei 0,38 € bleibt oder sich ändert." }
+        },
+        {
+          "@type": "Question",
+          "name": "Muss ich 2027 etwas anders in der Anlage N eintragen?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nein, der Weg ist derselbe: Die Pendlerpauschale gehört als Werbungskosten in die Anlage N — Entfernung in vollen Kilometern und Zahl der Pendeltage eintragen, ELSTER rechnet mit dem dann geltenden Satz. Die Steuererklärung für das Steuerjahr 2027 geben Sie im Jahr 2028 ab." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="PendlerRechner Logo" width="38" height="38">PendlerRechner</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Rechner</a></li>
+        <li><a href="pendlerpauschale-2026-neuerung.html">Neuerung 2026</a></li>
+        <li><a href="pendlerpauschale-2027.html" class="active">Pauschale 2027</a></li>
+        <li><a href="pendlerpauschale-teilzeit-2026.html">Teilzeit 2026</a></li>
+        <li><a href="homeoffice-pendlerpauschale-2026.html">Homeoffice 2026</a></li>
+        <li><a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch vs. Pauschale</a></li>
+        <li><a href="arbeitstage-berechnen.html">Arbeitstage</a></li>
+        <li><a href="so-funktionierts.html">So funktioniert's</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-compact">
+  <div class="container">
+    <span class="badge">STEUERJAHR 2027 · STAND NOVEMBER 2026</span>
+    <h1>Pendlerpauschale 2027: Was schon feststeht</h1>
+    <p class="lead">Die ehrliche Antwort zuerst: <strong>Die Regeln für 2027 stehen noch nicht fest.</strong> Wer Ihnen heute schon einen Satz für 2027 nennt, rät — er weiß es nicht. Hier steht, was schon sicher ist, was Sie beobachten sollten und wie Sie Ihren Arbeitsweg jetzt richtig planen.</p>
+  </div>
+</section>
+
+<main class="container" id="inhalt">
+  <div class="section">
+    <div class="breadcrumbs"><a href="index.html">Start</a> › Pendlerpauschale 2027</div>
+    <div class="card article">
+      <div class="toc">
+        <strong>Inhalt</strong>
+        <ul>
+          <li><a href="#antwort">Die Antwort in Kürze: Noch nichts beschlossen</a></li>
+          <li><a href="#basis-2026">Die bekannte Basis: Was 2026 gilt</a></li>
+          <li><a href="#sicher">Was für 2027 schon sicher ist</a></li>
+          <li><a href="#offen">Was noch offen ist — und worauf Sie achten sollten</a></li>
+          <li><a href="#beispiel">Rechenbeispiel mit dem bekannten Satz 2026</a></li>
+          <li><a href="#tabelle">Entfernungstabelle: Was die Pauschale 2026 wert ist</a></li>
+          <li><a href="#planen">So planen Sie Ihren Arbeitsweg jetzt</a></li>
+          <li><a href="#anlage-n">Anlage N: So wird 2027 eingetragen</a></li>
+          <li><a href="#fehler">Die 5 häufigsten Fehler rund um 2027</a></li>
+          <li><a href="#faq">Häufige Fragen</a></li>
+        </ul>
+      </div>
+
+      <h2 id="antwort">Die Antwort in Kürze: Noch nichts beschlossen</h2>
+      <p>Stand <strong>November 2026</strong> ist für das Steuerjahr 2027 <strong>kein Satz für die Pendlerpauschale beschlossen</strong>. Es gibt keine feststehende Zahl, kein beschlossenes Gesetz und keinen Termin, den wir Ihnen nennen könnten. Alles, was Sie anderswo über einen Satz 2027 lesen, ist eine Vermutung, eine Forderung oder eine Hochrechnung — keine geltende Regel.</p>
+      <p>Was wir wissen, ist die <strong>bekannte Basis 2026</strong>: Seit dem Steuerjahr 2026 gilt <strong>0,38&nbsp;€ pro Kilometer ab dem ersten Kilometer</strong> der einfachen Strecke, mal die Zahl Ihrer Pendeltage. Das ist der Satz, mit dem Sie heute rechnen können — und mit dem Sie auch Ihre Planung für 2027 beginnen sollten. Ob er 2027 gleich bleibt, steigt oder sinkt, entscheidet sich erst im Gesetzgebungsverfahren. Bis dahin gilt: Planen Sie mit 0,38&nbsp;€, aber rechnen Sie nicht fest damit.</p>
+      <p>Dieser Artikel wird aktualisiert, sobald ein Satz für 2027 beschlossen ist. Bis dahin finden Sie hier die Fakten, die heute schon sicher sind — und eine Planung, die funktioniert, egal wie die Entscheidung ausfällt. Alle Details zur aktuellen Regelung stehen in unserem Artikel zur <a href="pendlerpauschale-2026-neuerung.html">Pendlerpauschale-Neuerung 2026</a>.</p>
+
+      <h2 id="basis-2026">Die bekannte Basis: Was 2026 gilt</h2>
+      <p>Die Pendlerpauschale — offiziell Entfernungspauschale — ist der einfachste Steuerabzug für Pendler: keine Belege, keine Tankquittungen, nur zwei Zahlen. Seit dem Steuerjahr 2026 gilt eine einfache Regel: <strong>0,38&nbsp;€ pro Kilometer ab dem ersten Kilometer</strong> der einfachen Strecke zwischen Wohnung und erster Tätigkeitsstätte. Keine Staffelung mehr, keine Knickstelle bei Kilometer&nbsp;21 — ein Rechenschritt genügt: volle Kilometer × 0,38&nbsp;€ × Pendeltage.</p>
+      <p>Bei Vollzeit sind das in der Regel <strong>230 Pendeltage</strong> im Jahr. Ein Beispiel: 25&nbsp;km einfache Strecke, 230 Tage im Büro — das ergibt <strong>2.185&nbsp;€ Pendlerpauschale</strong> im Jahr (25 × 0,38&nbsp;€ × 230). Bei 30&nbsp;km sind es 2.622&nbsp;€, bei 15&nbsp;km 1.311&nbsp;€. Die Pauschale wirkt sich steuermindernd aus, sobald Ihre gesamten Werbungskosten über dem <strong>Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€</strong> liegen — der Pauschbetrag wird jedem automatisch gewährt, erst was darüber liegt, senkt Ihre Steuer. Rechnen Sie Ihr eigenes Modell mit unserem <a href="index.html">Pendlerpauschale-Rechner 2026</a> nach.</p>
+      <p>Zwei Grenzen sollten Sie kennen. Erstens: Wer <strong>kein eigenes Kraftfahrzeug</strong> nutzt (ÖPNV, Fahrrad, Mitfahrer), kann die Pendlerpauschale nur bis zu <strong>4.500&nbsp;€</strong> im Jahr ansetzen — höhere tatsächliche ÖPNV-Ticketkosten dürfen aber angesetzt werden. Autofahrer sind von dieser Grenze nicht betroffen. Zweitens: Die alte Staffel — 0,30&nbsp;€ pro Kilometer für die ersten 20&nbsp;km und 0,38&nbsp;€ ab dem 21.&nbsp;km — galt von 2022 bis 2025 und ist seit 2026 Geschichte. Wer noch mit der alten Staffel rechnet, verschenkt Geld. Alle Details dazu finden Sie in unserem Artikel zur <a href="pendlerpauschale-2026-neuerung.html">Pendlerpauschale-Neuerung 2026</a>.</p>
+
+      <h2 id="sicher">Was für 2027 schon sicher ist</h2>
+      <p>Auch wenn der Satz für 2027 noch nicht feststeht, ist einiges schon sicher — nämlich der Rahmen, in dem die Pendlerpauschale 2027 funktionieren wird:</p>
+      <ul>
+        <li><strong>Die Anlage N bleibt der Ort für die Pauschale.</strong> Die Pendlerpauschale gehört als Werbungskosten in die <strong>Anlage&nbsp;N</strong> zur Einkommensteuererklärung. Daran ändert sich nichts: Entfernung in vollen Kilometern und Zahl der Pendeltage eintragen, der Rest läuft über den dann geltenden Satz. Die ausführliche Anleitung steht in unserem Artikel zur <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Pendlerpauschale in der Steuererklärung: Anlage&nbsp;N</a>.</li>
+        <li><strong>Die Steuererklärung für 2027 geben Sie 2028 ab.</strong> Das Steuerjahr 2027 wird — wie jedes Steuerjahr — im Folgejahr erklärt. Sie haben also Zeit: Zwischen dem Beschluss des Satzes und Ihrer Erklärung liegen Monate, in denen Sie Ihre Pendeltage sauber dokumentieren können.</li>
+        <li><strong>Die geltenden Regeln als Ausgangspunkt.</strong> Die <strong>Homeoffice-Pauschale von 6&nbsp;€ pro Tag, maximal 1.260&nbsp;€ im Jahr</strong>, und der <strong>Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€</strong> sind die Regeln, die heute gelten — sie sind der Ausgangspunkt jeder Planung für 2027, bis etwas anderes beschlossen wird. Wie sich beide Pauschalen kombinieren lassen, zeigt unser Artikel zu <a href="homeoffice-pendlerpauschale-2026.html">Homeoffice und Pendlerpauschale 2026</a>.</li>
+        <li><strong>Ein Tag zählt nur einmal.</strong> Ein Tag ist entweder ein Pendeltag oder ein Homeoffice-Tag — nie beides. Diese Grundregel der Werbungskosten gilt unabhängig vom Satz und wird sich 2027 nicht ändern: Wer seine Tage sauber trennt, hat keine Nachfragen zu befürchten.</li>
+      </ul>
+      <p>Das ist der Rahmen, auf den Sie sich verlassen können. Alles andere — vor allem der Satz selbst — ist bis zum Beschluss offen. Wer Ihnen heute schon verspricht, dass 2027 "sicher 0,40&nbsp;€" oder "sicher 0,38&nbsp;€" gelten, verkauft Ihnen eine Vermutung als Tatsache.</p>
+
+      <h2 id="offen">Was noch offen ist — und worauf Sie achten sollten</h2>
+      <p>Der Satz für 2027 entsteht im <strong>Gesetzgebungsverfahren</strong>: Bundestag und Bundesrat beschließen, danach konkretisiert ein <strong>BMF-Schreiben</strong> die Anwendung. Solange dieses Verfahren läuft, gibt es keine verlässliche Zahl. Das sollten Sie beobachten:</p>
+      <ul>
+        <li><strong>Gesetzgebung im Bundestag und Bundesrat:</strong> Erst wenn ein Gesetz beschlossen ist, steht der Satz. Vorher sind alle Zahlen, die in der Debatte kursieren, Vorschläge — keine Regeln.</li>
+        <li><strong>BMF-Schreiben:</strong> Nach dem Gesetz legt das Bundesfinanzministerium in einem Schreiben fest, wie die Regelung anzuwenden ist. Erst damit wird der Satz für die Praxis — und für ELSTER — verbindlich.</li>
+        <li><strong>Die öffentliche Debatte:</strong> In der Diskussion um 2027 spielen Themen wie Inflation und die CO₂-Preis-Entwicklung eine Rolle — als Argumente, nicht als Beschlüsse. Nehmen Sie Debattenbeiträge nicht als Ankündigung: Sie zeigen, worüber gesprochen wird, nicht was beschlossen wird.</li>
+        <li><strong>Unsere Aktualisierung:</strong> Sobald ein Satz für 2027 beschlossen ist, aktualisieren wir unsere Übersicht zur <a href="pendlerpauschale-2026-neuerung.html">Pendlerpauschale-Neuerung</a> und unseren <a href="index.html">Pendlerpauschale-Rechner</a>. Schauen Sie dort nach, statt sich auf einzelne Meldungen zu verlassen.</li>
+      </ul>
+      <p>Ein praktischer Rat: Lassen Sie sich von Zwischenmeldungen nicht zu überstürzten Entscheidungen verleiten — etwa einem Umzug näher an den Arbeitsplatz oder einem Fahrzeugwechsel, nur weil ein möglicher Satz in den Medien steht. Solche Entscheidungen lohnen sich erst, wenn der Satz feststeht und Sie ihn mit Ihren tatsächlichen Pendeltagen durchrechnen können.</p>
+
+      <h2 id="beispiel">Rechenbeispiel mit dem bekannten Satz 2026</h2>
+      <p>Alle Beispiele in diesem Abschnitt verwenden den <strong>bekannten Satz 2026 von 0,38&nbsp;€ pro Kilometer</strong> — ausdrücklich <em>nicht</em> als Satz 2027, sondern als Rechengrundlage, mit der Sie heute planen können. Ein typischer Fall: 25&nbsp;km einfache Strecke, 230 Arbeitstage im Büro bei Vollzeit.</p>
+      <div class="formula"><b>25 km × 0,38 € × 230 Tage = 2.185 € Pendlerpauschale (Satz 2026)</b></div>
+      <p>Die 2.185&nbsp;€ sind Werbungskosten: Sie mindern Ihr zu versteuerndes Einkommen — aber nur der Teil, der über dem Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€ liegt, wirkt sich zusätzlich aus. Bei einem Grenzsteuersatz von 30&nbsp;% bedeutet eine Pauschale von 2.185&nbsp;€, dass 955&nbsp;€ über dem Pauschbetrag liegen und rund <strong>287&nbsp;€ Steuerersparnis</strong> bringen (955&nbsp;€ × 30&nbsp;%). Wer nur 10&nbsp;km pendelt, kommt auf 874&nbsp;€ Pauschale — unter dem Pauschbetrag von 1.230&nbsp;€, also ohne zusätzliche Steuerwirkung. Das zeigt: Der Arbeitsweg muss lang genug sein, damit die Pauschale überhaupt wirkt.</p>
+      <p>Und was, wenn der Satz 2027 anders ausfällt? Die Rechnung bleibt dieselbe — nur die Zahl 0,38&nbsp;€ ändert sich. Bei 25&nbsp;km und 230 Tagen ist jeder Cent pro Kilometer 57,50&nbsp;€ Pauschale im Jahr wert (25 × 230 × 0,01&nbsp;€). Steigt der Satz um 2 Cent, sind das 115&nbsp;€ mehr Werbungskosten; sinkt er um 2 Cent, 115&nbsp;€ weniger. Mit dieser Faustregel können Sie jede künftige Entscheidung in Sekunden nachrechnen — sobald der Satz feststeht.</p>
+
+      <h2 id="tabelle">Entfernungstabelle: Was die Pauschale 2026 wert ist</h2>
+      <p>Die Tabelle zeigt die Pendlerpauschale für verschiedene Entfernungen — jeweils bei 230 Pendeltagen im Jahr und mit dem <strong>bekannten Satz 2026 von 0,38&nbsp;€ pro Kilometer</strong>. Sie ist Ihre Planungsgrundlage für 2027, bis ein neuer Satz beschlossen ist:</p>
+      <table class="data">
+        <tr><th>Entfernung (einfach)</th><th>Rechnung (Satz 2026)</th><th>Pendlerpauschale / Jahr</th></tr>
+        <tr><td>10 km</td><td>10 × 0,38 € × 230 Tage</td><td><strong>874 €</strong></td></tr>
+        <tr><td>15 km</td><td>15 × 0,38 € × 230 Tage</td><td><strong>1.311 €</strong></td></tr>
+        <tr><td>25 km</td><td>25 × 0,38 € × 230 Tage</td><td><strong>2.185 €</strong></td></tr>
+        <tr><td>30 km</td><td>30 × 0,38 € × 230 Tage</td><td><strong>2.622 €</strong></td></tr>
+        <tr><td>40 km</td><td>40 × 0,38 € × 230 Tage</td><td><strong>3.496 €</strong></td></tr>
+        <tr><td>50 km</td><td>50 × 0,38 € × 230 Tage</td><td><strong>4.370 €</strong></td></tr>
+      </table>
+      <p>Beachten Sie: Bei 10&nbsp;km und 15&nbsp;km liegt die Pauschale nur knapp über dem Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€ — die zusätzliche Steuerwirkung ist dort klein. Erst ab etwa 15&nbsp;km wird die Pauschale richtig wirksam. Wer im Homeoffice arbeitet, sollte die Tage sauber trennen: Ein Beispiel mit 25&nbsp;km Arbeitsweg, drei Tagen pro Woche im Büro und zwei Tagen im Homeoffice — rund 138 Pendeltage und 92 Homeoffice-Tage — ergibt 25&nbsp;km × 0,38&nbsp;€ × 138 Tage = <strong>1.311&nbsp;€</strong> Pendlerpauschale plus 92 Tage × 6&nbsp;€ = <strong>552&nbsp;€</strong> Homeoffice-Pauschale, zusammen <strong>1.863&nbsp;€ Werbungskosten</strong> (alle Sätze 2026). Wie sich beide Pauschalen kombinieren lassen, zeigt unser Artikel zu <a href="homeoffice-pendlerpauschale-2026.html">Homeoffice und Pendlerpauschale 2026</a>.</p>
+
+      <h2 id="planen">So planen Sie Ihren Arbeitsweg jetzt</h2>
+      <p>Die beste Vorbereitung auf 2027 kostet nichts — sie braucht nur ein bisschen Disziplin:</p>
+      <ol>
+        <li><strong>Pendeltage dokumentieren:</strong> Führen Sie ab sofort ein einfaches Fahrtagebuch — welche Tage Sie zur Arbeit gefahren sind. Das Finanzamt akzeptiert die Pauschale in der Regel ohne Belege, fragt bei hohen Beträgen aber gelegentlich nach. Mit dokumentierten Tagen können Sie die Pauschale für 2027 sofort berechnen, sobald der Satz feststeht.</li>
+        <li><strong>Entfernung einmal richtig messen:</strong> Zählen Sie die einfache Strecke in vollen Kilometern — nicht Hin- und Rückfahrt, nur eine Strecke. Der kürzeste Weg gilt, es sei denn, ein längerer Weg ist deutlich schneller. Notieren Sie die Kilometerzahl, damit Sie sie 2027 nicht neu ermitteln müssen.</li>
+        <li><strong>Hybrid-Modell durchrechnen:</strong> Wenn Sie teilweise im Homeoffice arbeiten, rechnen Sie beide Pauschalen zusammen — Pendlerpauschale für Bürotage, Homeoffice-Pauschale für Tage daheim (6&nbsp;€ pro Tag, maximal 1.260&nbsp;€ im Jahr, Sätze 2026). So sehen Sie, ob sich ein zusätzlicher Bürotage überhaupt lohnt. Mehr dazu in unserem Artikel zur <a href="pendlerpauschale-teilzeit-2026.html">Pendlerpauschale bei Teilzeit 2026</a>.</li>
+        <li><strong>Keine Entscheidung auf Vermutungen stützen:</strong> Treffen Sie keine teuren Entscheidungen — Umzug, Fahrzeugwechsel, Arbeitsplatzwechsel — auf der Grundlage eines vermuteten Satzes 2027. Warten Sie den Beschluss ab und rechnen Sie dann mit Ihren tatsächlichen Zahlen.</li>
+        <li><strong>Rechner und Übersicht im Blick behalten:</strong> Sobald der Satz für 2027 beschlossen ist, aktualisieren wir unseren <a href="index.html">Pendlerpauschale-Rechner</a> und die Übersicht zur <a href="pendlerpauschale-2026-neuerung.html">Pendlerpauschale-Neuerung</a>. Ein Blick dorthin genügt, um Ihre Planung anzupassen.</li>
+      </ol>
+      <p>Ein praktischer Tipp: Rechnen Sie Ihre persönliche Pauschale einmal mit dem Satz 2026 durch und notieren Sie sich das Ergebnis — zum Beispiel "25&nbsp;km, 230 Tage, 2.185&nbsp;€ (Satz 2026)". Sobald der Satz 2027 feststeht, ersetzen Sie nur die eine Zahl und haben sofort den neuen Wert. So sind Sie schneller als jeder, der erst dann anfängt, seine Tage zu zählen.</p>
+
+      <h2 id="anlage-n">Anlage N: So wird 2027 eingetragen</h2>
+      <p>Die Pendlerpauschale gehört als Werbungskosten in die <strong>Anlage&nbsp;N</strong> zur Einkommensteuererklärung. So gehen Sie vor — für 2027 genauso wie für 2026:</p>
+      <ol>
+        <li><strong>Anlage&nbsp;N öffnen</strong> und zum Abschnitt <em>Wege zwischen Wohnung und erster Tätigkeitsstätte</em> scrollen.</li>
+        <li><strong>Entfernung eintragen:</strong> die einfache Strecke in vollen Kilometern angeben — nicht die Hin- und Rückfahrt, nur eine Strecke.</li>
+        <li><strong>Pendeltage eintragen:</strong> nur die Tage, an denen Sie tatsächlich gefahren sind. ELSTER berechnet den Betrag automatisch mit dem dann geltenden Satz.</li>
+        <li><strong>Homeoffice-Tage eintragen:</strong> die Zahl der Homeoffice-Tage im entsprechenden Feld für Werbungskosten angeben — ELSTER rechnet 6&nbsp;€ pro Tag, höchstens 1.260&nbsp;€ im Jahr (Sätze 2026).</li>
+        <li><strong>Prüfen:</strong> Vergleichen Sie das Ergebnis mit unserem <a href="index.html">Pendlerpauschale-Rechner</a> und Ihrer eigenen Rechnung (Kilometer × Satz × Tage). Stimmen die Werte überein, ist alles korrekt eingetragen.</li>
+      </ol>
+      <p>Die ausführliche Schritt-für-Schritt-Anleitung — inklusive ELSTER-Screenshots in Worten und der häufigsten Nachfragen des Finanzamts — finden Sie in unserer Anleitung zur <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Pendlerpauschale in der Steuererklärung: Anlage&nbsp;N</a>. Die Steuererklärung für das Steuerjahr 2027 geben Sie im Jahr 2028 ab.</p>
+
+      <h2 id="fehler">Die 5 häufigsten Fehler rund um 2027</h2>
+      <ol>
+        <li><strong>Den Satz 2026 als Satz 2027 annehmen:</strong> 0,38&nbsp;€ pro Kilometer gilt für 2026. Für 2027 ist noch nichts beschlossen — wer fest damit rechnet, kann sich verrechnen. Planen Sie mit 0,38&nbsp;€, aber halten Sie Ihre Rechnung flexibel.</li>
+        <li><strong>Alte 0,30-€-Staffel verwendet:</strong> Ab 2026 gilt 0,38&nbsp;€ ab dem ersten Kilometer. Die Staffel mit 0,30&nbsp;€ für die ersten 20&nbsp;km galt nur bis 2025 — wer sie 2027 noch ansetzt, verschenkt Geld.</li>
+        <li><strong>Denselben Tag doppelt gezählt:</strong> Ein Tag ist entweder ein Pendeltag oder ein Homeoffice-Tag — nie beides. Wer 138 Pendeltage und zusätzlich 138 Homeoffice-Tage ansetzt, hat 276 Arbeitstage angegeben und wird nachgefragt.</li>
+        <li><strong>Hin- und Rückfahrt statt einfacher Strecke:</strong> Die Pauschale gilt für die einfache Strecke. Wer 25&nbsp;km hin und 25&nbsp;km zurück als 50&nbsp;km ansetzt, verdoppelt die Pauschale — und das Finanzamt korrigiert sie.</li>
+        <li><strong>Pauschbetrag vergessen:</strong> Der Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€ wird jedem automatisch gewährt. Nur Werbungskosten darüber hinaus senken die Steuer zusätzlich — bei kurzem Arbeitsweg kann die Pauschale also wirkungslos bleiben.</li>
+      </ol>
+      <div class="info"><strong>Unser Tipp:</strong> Dokumentieren Sie Ihre Pendeltage ab sofort — das ist die einzige Vorbereitung, die Sie für 2027 brauchen. Berechnen Sie Ihre persönliche Pauschale mit dem bekannten Satz 2026 in unserem <a href="index.html">Pendlerpauschale-Rechner 2026</a> und passen Sie die eine Zahl an, sobald der Satz 2027 beschlossen ist.</div>
+      <p class="small">Hinweis: Dieser Artikel dient der allgemeinen Information und stellt keine Steuerberatung dar. Alle Angaben ohne Gewähr; maßgeblich sind die gesetzlichen Regelungen und Ihr Steuerbescheid. Stand: November 2026.</p>
+    </div>
+
+    <h2 id="faq">Häufige Fragen</h2>
+    <details>
+      <summary>Gilt 2027 weiterhin 0,38 € pro Kilometer?</summary>
+      <p>Das steht noch nicht fest. Stand November 2026 ist kein Satz für 2027 beschlossen. Der Satz von 0,38 € pro Kilometer ab dem ersten Kilometer gilt für das Steuerjahr 2026. Ob er 2027 gleich bleibt, steigt oder sinkt, entscheidet sich erst im Gesetzgebungsverfahren — planen Sie bis dahin mit dem bekannten Satz 2026, aber rechnen Sie nicht fest damit.</p>
+    </details>
+    <details>
+      <summary>Wann stehen die Regeln für die Pendlerpauschale 2027 fest?</summary>
+      <p>Einen festen Termin gibt es nicht. Die Regeln entstehen im Gesetzgebungsverfahren — Bundestag und Bundesrat — und werden danach in einem BMF-Schreiben konkretisiert. Sobald ein Satz für 2027 beschlossen ist, aktualisieren wir unsere Übersicht zur Pendlerpauschale-Neuerung und unseren Rechner.</p>
+    </details>
+    <details>
+      <summary>Was kann ich jetzt schon für 2027 tun?</summary>
+      <p>Das Wichtigste ist, Ihre Pendeltage ab sofort sauber zu dokumentieren: Entfernung in vollen Kilometern und die Zahl der Tage, an denen Sie tatsächlich zur Arbeit gefahren sind. Damit können Sie die Pendlerpauschale für 2027 sofort berechnen, sobald der Satz feststeht — egal ob er bei 0,38 € bleibt oder sich ändert.</p>
+    </details>
+    <details>
+      <summary>Muss ich 2027 etwas anders in der Anlage N eintragen?</summary>
+      <p>Nein, der Weg ist derselbe: Die Pendlerpauschale gehört als Werbungskosten in die Anlage N — Entfernung in vollen Kilometern und Zahl der Pendeltage eintragen, ELSTER rechnet mit dem dann geltenden Satz. Die Steuererklärung für das Steuerjahr 2027 geben Sie im Jahr 2028 ab.</p>
+    </details>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.svg" alt="PendlerRechner Logo" width="34" height="34">PendlerRechner</div>
+        <p>Der unabhängige Pendlerpauschale-Rechner für 2026: Entfernungspauschale berechnen, Neuregelung verstehen, Steuerersparnis schätzen.</p>
+      </div>
+      <div>
+        <h4>Rechner &amp; Ratgeber</h4>
+        <ul>
+          <li><a href="index.html">Pendlerpauschale-Rechner</a></li>
+          <li><a href="pendlerpauschale-2026-neuerung.html">Neuerung 2026</a></li>
+          <li><a href="pendlerpauschale-2027.html">Pendlerpauschale 2027</a></li>
+          <li><a href="pendlerpauschale-teilzeit-2026.html">Teilzeit 2026</a></li>
+          <li><a href="homeoffice-pendlerpauschale-2026.html">Homeoffice 2026</a></li>
+          <li><a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch vs. Pauschale</a></li>
+          <li><a href="pendlerpauschale-steuererklaerung-anlage-n.html">Steuererklärung: Anlage N</a></li>
+          <li><a href="arbeitstage-berechnen.html">Arbeitstage berechnen</a></li>
+          <li><a href="so-funktionierts.html">So funktioniert's</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="cookie-richtlinie.html">Cookie-Richtlinie</a></li>
+          <li><a href="haftungsausschluss.html">Haftungsausschluss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="jahr">2026</span> PendlerRechner. Alle Rechte vorbehalten.</span>
+      <span>Unverbindliche Schätzung – keine Steuerberatung.</span>
+    </div>
+  </div>
+</footer>
+<div class="disclaimer-strip">Alle Berechnungen sind unverbindlich und ohne Gewähr – keine Steuerberatung.</div>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
+  <div class="container">
+    <p>Wir verwenden nur technisch notwendige Speicherung (z.&nbsp;B. Ihre Cookie-Auswahl). Es findet kein Tracking statt. Details in der <a href="cookie-richtlinie.html">Cookie-Richtlinie</a>.</p>
+    <div class="btn-row" style="margin-top:0">
+      <button class="btn" id="cookie-accept">Alle akzeptieren</button>
+      <button class="btn btn-ghost" id="cookie-necessary">Nur notwendige</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
