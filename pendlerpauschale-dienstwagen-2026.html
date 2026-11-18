@@ -1,0 +1,324 @@
+<!--
+  DRAFT — verified, ready for auto-publish (user gate 2026-11-07: "Roz khud publish kar dun, review ka wait nahi").
+  Target repo: mirzacreative/pendlerpauschale-rechner
+  Target filename: pendlerpauschale-dienstwagen-2026.html
+  Target URL: https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-dienstwagen-2026.html
+  After upload: add the URL to sitemap.xml (lastmod 2026-11-18), link it from index.html and
+  fahrtenbuch-vs-pendlerpauschale.html, request indexing (Search Console signed in as
+  aivideos146@gmail.com in this run's browser session).
+  NOTE: follows the site's existing guide format (pendlerpauschale-2027.html).
+  It has NO og:image because the site currently has no social-image asset — see MASTER-PLAN.md fix #1.
+  HONESTY RULE FOR THIS POST: no 2027 rate, law, date or Bundestag decision is invented.
+  All figures use the site's own published 2026 rules, verified against the live pages:
+  ab 2026 einheitlich 0,38 €/km ab dem ersten Kilometer (pendlerpauschale-2026-neuerung.html);
+  Arbeitnehmer-Pauschbetrag 1.230 €, 230 Arbeitstage als Richtwert bei Vollzeit,
+  4.500-€-Obergrenze nur für Nicht-Autofahrer. Dienstwagen-Regeln (1%-Regel, 0,03%-Regel,
+  Einzelfahrtenbewertung 0,002 % je Fahrt, 0,25 %-Regel für E-Dienstwagen bis 70.000 €
+  Bruttolistenpreis, 0,5 % für Plug-in-Hybride) wie in fahrtenbuch-vs-pendlerpauschale.html
+  verwendet. Rechenbeispiele (in Python geprüft, alle mit dem BEKANNTEN Satz 2026):
+  Dienstwagen 45.000 € Listenpreis, 25 km: 1 % = 450 €/Monat (5.400 €/Jahr),
+  0,03 % = 337,50 €/Monat (4.050 €/Jahr), zusammen 787,50 €/Monat = 9.450 €/Jahr
+  geldwerter Vorteil; Pendlerpauschale 25 km × 0,38 € × 230 Tage = 2.185 € mindert den
+  Zuschlag auf 1.865 €, zu versteuernder Vorteil insgesamt 7.265 €/Jahr (bei 30 %
+  Grenzsteuersatz ca. 2.179,50 € Steuer). Einzelfahrten (10 Fahrten/Monat): 22,50 € je
+  Fahrt = 2.700 €/Jahr, nach Pauschale 515 €, insgesamt 5.915 €/Jahr — 1.350 € weniger
+  zu versteuern. E-Dienstwagen 45.000 €: 0,25 % = 112,50 €/Monat (1.350 €/Jahr),
+  Zuschlag auf den geviertelten Listenpreis 84,38 €/Monat (1.012,50 €/Jahr), von der
+  Pauschale vollständig ausgeglichen; zu versteuernder Vorteil nur 1.350 €/Jahr.
+  Zweitbeispiel 35.000 €, 20 km: 350 € + 210 € = 560 €/Monat.
+  Keyword basis: gap hypothesis (no measured Search Console numbers supplied for this keyword).
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendlerpauschale + Dienstwagen 2026: So rechnest du</title>
+<meta name="description" content="Dienstwagen + Pendlerpauschale 2026: 1%-Regel, 0,03%-Regel und 0,25% für E-Autos erklärt — mit Rechenbeispiel, Einzelfahrten und Steuerersparnis.">
+<meta name="keywords" content="pendlerpauschale dienstwagen, dienstwagen pendlerpauschale 2026, 1 prozent regel dienstwagen, 0,03 prozent regel, dienstwagen steuer 2026, e-dienstwagen 0,25 prozent">
+<link rel="canonical" href="https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-dienstwagen-2026.html">
+<link rel="alternate" hreflang="de" href="https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-dienstwagen-2026.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0e1a3a">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PendlerRechner">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Pendlerpauschale + Dienstwagen 2026: So rechnest du">
+<meta property="og:description" content="Dienstwagen + Pendlerpauschale 2026: 1%-Regel, 0,03%-Regel und 0,25%-Regel für E-Autos — mit Rechenbeispiel und der Frage, wie viel die Pauschale wirklich ausgleicht.">
+<meta property="og:url" content="https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-dienstwagen-2026.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pendlerpauschale + Dienstwagen 2026: So rechnest du">
+<meta name="twitter:description" content="Dienstwagen + Pendlerpauschale 2026: 1%-Regel, 0,03%-Regel und 0,25% für E-Autos — mit Beispielrechnung und Steuerersparnis.">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mirzacreative.github.io/pendlerpauschale-rechner/#website",
+      "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/",
+      "name": "PendlerRechner",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-dienstwagen-2026.html#article",
+      "headline": "Pendlerpauschale + Dienstwagen 2026: So rechnest du",
+      "description": "Pendlerpauschale + Dienstwagen 2026: Die 1%-Regel, die 0,03%-Regel und die 0,25%-Regel für E-Dienstwagen — mit Rechenbeispiel und der Frage, wie weit die Pendlerpauschale den geldwerten Vorteil ausgleicht.",
+      "inLanguage": "de",
+      "datePublished": "2026-11-18",
+      "dateModified": "2026-11-18",
+      "author": { "@type": "Organization", "name": "PendlerRechner", "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/" },
+      "publisher": { "@type": "Organization", "name": "PendlerRechner", "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/" },
+      "mainEntityOfPage": "https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-dienstwagen-2026.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Start","item":"https://mirzacreative.github.io/pendlerpauschale-rechner/"},
+        {"@type":"ListItem","position":2,"name":"Pendlerpauschale + Dienstwagen 2026","item":"https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-dienstwagen-2026.html"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kann ich die Pendlerpauschale auch mit Dienstwagen ansetzen?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja. Die Pendlerpauschale von 0,38 € pro Kilometer ab dem ersten Kilometer steht Ihnen auch mit Dienstwagen als Werbungskosten zu. Sie mindert den steuerpflichtigen Vorteil aus den Fahrten zur ersten Tätigkeitsstätte (die 0,03 %-Regel) — aber nur bis zur Höhe dieses Zuschlags, nicht den 1 %-Anteil für die private Nutzung." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie hoch ist der geldwerte Vorteil bei einem Dienstwagen 2026?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nach der 1 %-Regel beträgt er 1 % des Bruttolistenpreises pro Monat für die private Nutzung, plus 0,03 % des Bruttolistenpreises je Entfernungskilometer und Monat für die Fahrten zur ersten Tätigkeitsstätte. Beispiel: 45.000 € Listenpreis und 25 km Arbeitsweg ergeben 450 € plus 337,50 €, also 787,50 € im Monat — 9.450 € im Jahr, vor Abzug der Pendlerpauschale." }
+        },
+        {
+          "@type": "Question",
+          "name": "Was gilt für einen E-Dienstwagen 2026?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Für einen reinen Elektro-Dienstwagen mit einem Bruttolistenpreis bis 70.000 € gilt die 0,25 %-Regel statt der 1 %-Regel — also nur ein Viertel des normalen Vorteils. Auch der Zuschlag für die Fahrten zur Arbeit wird auf den geviertelten Listenpreis berechnet. Für Plug-in-Hybride gilt die 0,5 %-Regel." }
+        },
+        {
+          "@type": "Question",
+          "name": "Lohnt sich die Einzelfahrtenbewertung statt der 0,03 %-Regel?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja, wenn Sie selten zur ersten Tätigkeitsstätte fahren. Statt pauschal 0,03 % je Kilometer und Monat werden dann 0,002 % je Kilometer und tatsächlicher Fahrt angesetzt. Bei 45.000 € Listenpreis und 25 km sind das 22,50 € je Fahrt — bei nur 10 Fahrten im Monat also 225 € statt 337,50 €. Voraussetzung ist eine lückenlose Aufzeichnung der Fahrten." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="PendlerRechner Logo" width="38" height="38">PendlerRechner</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Rechner</a></li>
+        <li><a href="pendlerpauschale-2026-neuerung.html">Neuerung 2026</a></li>
+        <li><a href="pendlerpauschale-2027.html">Pauschale 2027</a></li>
+        <li><a href="pendlerpauschale-dienstwagen-2026.html" class="active">Dienstwagen 2026</a></li>
+        <li><a href="pendlerpauschale-teilzeit-2026.html">Teilzeit 2026</a></li>
+        <li><a href="homeoffice-pendlerpauschale-2026.html">Homeoffice 2026</a></li>
+        <li><a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch vs. Pauschale</a></li>
+        <li><a href="arbeitstage-berechnen.html">Arbeitstage</a></li>
+        <li><a href="so-funktionierts.html">So funktioniert's</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-compact">
+  <div class="container">
+    <span class="badge">DIENSTWAGEN · STEUERJAHR 2026</span>
+    <h1>Pendlerpauschale + Dienstwagen 2026: So rechnest du</h1>
+    <p class="lead">Ein Dienstwagen ist kein Gratis-Auto: Der Staat rechnet Ihnen die private Nutzung als <strong>geldwerten Vorteil</strong> an — und genau hier greift die Pendlerpauschale ein. Wie die <strong>1%-Regel</strong>, die <strong>0,03%-Regel</strong> und die <strong>0,25%-Regel für E-Autos</strong> zusammenwirken — mit Beispielrechnung.</p>
+  </div>
+</section>
+
+<main class="container" id="inhalt">
+  <div class="section">
+    <div class="breadcrumbs"><a href="index.html">Start</a> › Pendlerpauschale + Dienstwagen 2026</div>
+    <div class="card article">
+      <div class="toc">
+        <strong>Inhalt</strong>
+        <ul>
+          <li><a href="#antwort">Die Antwort in Kürze</a></li>
+          <li><a href="#einprozent">Die 1%-Regel: Privatfahrten versteuern</a></li>
+          <li><a href="#nullkommanulldrei">Die 0,03%-Regel: Fahrten zur Arbeit</a></li>
+          <li><a href="#beispiel">Rechenbeispiel: 45.000 € Listenpreis, 25 km</a></li>
+          <li><a href="#pauschale">Wie die Pendlerpauschale den Vorteil mindert</a></li>
+          <li><a href="#einzelfahrten">Einzelfahrtenbewertung: Wenn Sie selten fahren</a></li>
+          <li><a href="#elektro">E-Dienstwagen: Die 0,25%-Regel</a></li>
+          <li><a href="#vergleich">Vergleichstabelle: Verbrenner, Hybrid, E-Auto</a></li>
+          <li><a href="#fahrtenbuch">Fahrtenbuch statt 1%-Regel?</a></li>
+          <li><a href="#anlage-n">Anlage N: So wird der Dienstwagen eingetragen</a></li>
+          <li><a href="#fehler">Die 5 häufigsten Fehler</a></li>
+          <li><a href="#faq">Häufige Fragen</a></li>
+        </ul>
+      </div>
+
+      <h2 id="antwort">Die Antwort in Kürze</h2>
+      <p>Wer einen Dienstwagen auch privat nutzen darf, versteuert einen <strong>geldwerten Vorteil</strong>: Der Arbeitgeber rechnet ihn jeden Monat auf das Bruttogehalt auf — Lohnsteuer und Sozialversicherung steigen, obwohl kein Geld fließt. Nach der <strong>1%-Regel</strong> sind das <strong>1&nbsp;% des Bruttolistenpreises pro Monat</strong> für die private Nutzung, plus <strong>0,03&nbsp;% je Entfernungskilometer pro Monat</strong> für die Fahrten zur ersten Tätigkeitsstätte. Die gute Nachricht: Die <strong>Pendlerpauschale von 0,38&nbsp;€ pro Kilometer</strong> (Satz 2026, ab dem ersten Kilometer) steht Ihnen auch mit Dienstwagen zu — sie mindert den steuerpflichtigen Vorteil aus den Arbeitswegen. Beispiel: Dienstwagen mit 45.000&nbsp;€ Listenpreis und 25&nbsp;km Arbeitsweg — 787,50&nbsp;€ Vorteil im Monat, 9.450&nbsp;€ im Jahr; nach Abzug der Pendlerpauschale von 2.185&nbsp;€ bleiben <strong>7.265&nbsp;€ zu versteuernder Vorteil im Jahr</strong>. Bei einem E-Dienstwagen mit demselben Listenpreis sind es dank der 0,25%-Regel nur <strong>1.350&nbsp;€</strong>.</p>
+      <p>Alle Zahlen in diesem Artikel verwenden die <strong>bekannten Regeln 2026</strong>: 0,38&nbsp;€ pro Kilometer ab dem ersten Kilometer, Arbeitnehmer-Pauschbetrag 1.230&nbsp;€, 230 Arbeitstage als Richtwert bei Vollzeit. Für 2027 ist — Stand November 2026 — noch kein Satz beschlossen; mehr dazu in unserem Artikel zur <a href="pendlerpauschale-2027.html">Pendlerpauschale 2027</a>. Die ausführliche Anleitung zur Neuregelung steht in unserem Artikel zur <a href="pendlerpauschale-2026-neuerung.html">Pendlerpauschale-Neuerung 2026</a>.</p>
+
+      <h2 id="einprozent">Die 1%-Regel: Privatfahrten versteuern</h2>
+      <p>Die <strong>1%-Regel</strong> ist die Standardmethode, mit der das Finanzamt die private Nutzung eines Dienstwagens bewertet. Sie ist bewusst pauschal: Statt zu zählen, wie viele private Kilometer Sie wirklich fahren, wird jeden Monat <strong>1&nbsp;% des Bruttolistenpreises</strong> des Fahrzeugs als geldwerter Vorteil angesetzt. Der Bruttolistenpreis ist der Preis des Fahrzeugs bei Erstzulassung inklusive Mehrwertsteuer und Sonderausstattung — nicht der Preis, den Ihr Arbeitgeber tatsächlich gezahlt hat, und nicht der aktuelle Zeitwert. Ein drei Jahre alter Dienstwagen wird also mit demselben Listenpreis bewertet wie am ersten Tag.</p>
+      <p>Der Vorteil wird auf Ihr Bruttogehalt aufgeschlagen und wie Lohn versteuert: Er erhöht Ihre Lohnsteuer und — weil er zum sozialversicherungspflichtigen Entgelt gehört — auch Ihre Beiträge zur Kranken-, Pflege-, Renten- und Arbeitslosenversicherung. Der Arbeitgeber führt die Abzüge direkt über die Lohnabrechnung ab; Sie sehen den Vorteil als eigene Position auf Ihrer Gehaltsabrechnung. Wichtig: Die 1%-Regel deckt <strong>alle privaten Fahrten</strong> ab — Einkaufen, Urlaub, Wochenendausflüge — und auch den Kraftstoff, wenn der Arbeitgeber ihn bezahlt. Wer privat nur sehr wenig fährt und ein teures Auto hat, zahlt mit der 1%-Regel oft mehr, als die tatsächliche Nutzung wert wäre. Für diese Fälle gibt es das Fahrtenbuch — dazu weiter unten.</p>
+      <p>Ein Beispiel: Dienstwagen mit 40.000&nbsp;€ Bruttolistenpreis — 1&nbsp;% sind <strong>400&nbsp;€ im Monat, 4.800&nbsp;€ im Jahr</strong>. Bei 60.000&nbsp;€ Listenpreis sind es 600&nbsp;€ im Monat, 7.200&nbsp;€ im Jahr. Die Regel gilt pro Kalendermonat, in dem Ihnen das Fahrzeug zur privaten Nutzung zur Verfügung steht — auch wenn Sie es nur an einem Teil der Tage nutzen.</p>
+
+      <h2 id="nullkommanulldrei">Die 0,03%-Regel: Fahrten zur Arbeit</h2>
+      <p>Zusätzlich zur 1%-Regel kommt der <strong>Zuschlag für die Fahrten zwischen Wohnung und erster Tätigkeitsstätte</strong>: <strong>0,03&nbsp;% des Bruttolistenpreises je Entfernungskilometer und Monat</strong>. Auch dieser Betrag ist ein geldwerter Vorteil und wird monatlich auf das Bruttogehalt aufgeschlagen. Die 0,03&nbsp;% gelten pauschal für den Monat — unabhängig davon, wie oft Sie tatsächlich gefahren sind. Wer nur an zehn Tagen im Monat ins Büro fährt, zahlt denselben Zuschlag wie jemand, der jeden Werktag fährt. Genau deshalb lohnt sich für Wenig-Fahrer die Einzelfahrtenbewertung, die wir weiter unten erklären.</p>
+      <p>Ein Beispiel: Dienstwagen mit 45.000&nbsp;€ Listenpreis und 25&nbsp;km einfacher Strecke zur Arbeit — 0,03&nbsp;% × 25&nbsp;km × 45.000&nbsp;€ = <strong>337,50&nbsp;€ im Monat, 4.050&nbsp;€ im Jahr</strong>. Bei 30&nbsp;km wären es 405&nbsp;€ im Monat, bei 10&nbsp;km nur 135&nbsp;€ im Monat. Je länger der Arbeitsweg, desto höher der Zuschlag — und desto wichtiger wird die Pendlerpauschale als Gegengewicht. Die 0,03%-Regel gilt nur, wenn Sie das Fahrzeug tatsächlich für die Fahrten zur ersten Tätigkeitsstätte nutzen. Fahren Sie ausschließlich im Homeoffice und nie ins Büro, fällt der Zuschlag weg — dann bleibt nur die 1%-Regel für die private Nutzung.</p>
+      <p>Zusammen ergibt das den vollständigen geldwerten Vorteil: 1&nbsp;% für die private Nutzung plus 0,03&nbsp;% je Kilometer für die Arbeitswege. Beide Beträge erscheinen auf Ihrer Gehaltsabrechnung und werden gemeinsam versteuert. Im nächsten Abschnitt rechnen wir das einmal vollständig durch.</p>
+
+      <h2 id="beispiel">Rechenbeispiel: 45.000 € Listenpreis, 25 km</h2>
+      <p>Unser Hauptbeispiel: Dienstwagen mit <strong>45.000&nbsp;€ Bruttolistenpreis</strong>, einfache Strecke zur Arbeit <strong>25&nbsp;km</strong>, Vollzeit mit 230 Arbeitstagen im Jahr. Alle Sätze sind die bekannten Regeln 2026.</p>
+      <p><strong>Schritt 1 — Die 1%-Regel (private Nutzung).</strong></p>
+      <div class="formula"><b>45.000 € × 1 % = 450 € pro Monat = 5.400 € pro Jahr</b></div>
+      <p><strong>Schritt 2 — Die 0,03%-Regel (Fahrten zur Arbeit).</strong></p>
+      <div class="formula"><b>45.000 € × 0,03 % × 25 km = 337,50 € pro Monat = 4.050 € pro Jahr</b></div>
+      <p><strong>Schritt 3 — Geldwerter Vorteil insgesamt.</strong></p>
+      <div class="formula"><b>450 € + 337,50 € = 787,50 € pro Monat = 9.450 € pro Jahr</b></div>
+      <p>Die 9.450&nbsp;€ sind der Vorteil <em>vor</em> Abzug der Pendlerpauschale. Bei einem Grenzsteuersatz von 30&nbsp;% würden ohne Pauschale rund 2.835&nbsp;€ Lohnsteuer im Jahr auf den Dienstwagen entfallen — plus Sozialversicherung. Doch die Pauschale greift ein, wie der nächste Abschnitt zeigt. Zum Vergleich ein kleineres Beispiel: Dienstwagen mit 35.000&nbsp;€ Listenpreis und 20&nbsp;km Arbeitsweg — 350&nbsp;€ (1&nbsp;%) plus 210&nbsp;€ (0,03&nbsp;%) = <strong>560&nbsp;€ im Monat, 6.720&nbsp;€ im Jahr</strong>.</p>
+
+      <h2 id="pauschale">Wie die Pendlerpauschale den Vorteil mindert</h2>
+      <p>Hier kommt die Pendlerpauschale ins Spiel — und hier liegt der entscheidende Punkt dieses Artikels: <strong>Die Pendlerpauschale steht Ihnen auch mit Dienstwagen zu.</strong> Sie ist eine Werbungskostenpauschale für die Wege zur Arbeit und hängt nicht davon ab, mit welchem Verkehrsmittel Sie fahren. Mit dem Satz 2026 von 0,38&nbsp;€ pro Kilometer ab dem ersten Kilometer ergibt sich für unser Beispiel:</p>
+      <div class="formula"><b>25 km × 0,38 € × 230 Tage = 2.185 € Pendlerpauschale pro Jahr</b></div>
+      <p>Diese 2.185&nbsp;€ mindern den steuerpflichtigen Vorteil — aber nur den Teil, der aus den Fahrten zur Arbeit stammt, also den <strong>0,03%-Zuschlag von 4.050&nbsp;€</strong>. Der 1%-Anteil von 5.400&nbsp;€ für die private Nutzung bleibt davon unberührt: Die Pauschale kann den Zuschlag nur bis auf null drücken, nicht den privaten Vorteil. Die Rechnung:</p>
+      <div class="formula"><b>4.050 € Zuschlag − 2.185 € Pendlerpauschale = 1.865 € verbleibender Vorteil aus Arbeitswegen</b></div>
+      <div class="formula"><b>5.400 € (1 %-Regel) + 1.865 € = 7.265 € zu versteuernder Vorteil pro Jahr</b></div>
+      <p>Statt 9.450&nbsp;€ werden also nur <strong>7.265&nbsp;€</strong> versteuert. Bei einem Grenzsteuersatz von 30&nbsp;% sind das rund <strong>2.179,50&nbsp;€ Lohnsteuer im Jahr</strong> statt 2.835&nbsp;€ — eine Ersparnis von etwa 655&nbsp;€, nur durch die Pendlerpauschale. Zwei Grenzen sollten Sie kennen: Erstens wirkt die Pauschale nur, soweit Ihre gesamten Werbungskosten über dem <strong>Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€</strong> liegen — der Pauschbetrag wird jedem automatisch gewährt. Zweitens gilt die <strong>4.500-€-Obergrenze nur für Nicht-Autofahrer</strong> (ÖPNV, Fahrrad, Mitfahrer); als Dienstwagen-Fahrer sind Sie davon nicht betroffen. Rechnen Sie Ihr eigenes Modell mit unserem <a href="index.html">Pendlerpauschale-Rechner 2026</a> nach.</p>
+
+      <h2 id="einzelfahrten">Einzelfahrtenbewertung: Wenn Sie selten fahren</h2>
+      <p>Die 0,03%-Regel rechnet pauschal mit 15 Fahrten im Monat — egal, ob Sie tatsächlich so oft gefahren sind. Wer nur an wenigen Tagen im Monat ins Büro fährt, etwa im Homeoffice-Modell mit zwei Bürotagen pro Woche, zahlt mit der Pauschale zu viel. Die Alternative ist die <strong>Einzelfahrtenbewertung</strong>: Statt 0,03&nbsp;% je Kilometer und Monat werden <strong>0,002&nbsp;% je Kilometer und tatsächlicher Fahrt</strong> angesetzt. Voraussetzung ist eine lückenlose Aufzeichnung der Fahrten zur ersten Tätigkeitsstätte — Datum und Strecke genügen, ein vollständiges Fahrtenbuch ist dafür nicht nötig.</p>
+      <p>Unser Beispiel: 45.000&nbsp;€ Listenpreis, 25&nbsp;km, nur 10 Fahrten im Monat:</p>
+      <div class="formula"><b>45.000 € × 0,002 % × 25 km = 22,50 € je Fahrt → 10 Fahrten = 225 € pro Monat = 2.700 € pro Jahr</b></div>
+      <p>Statt 4.050&nbsp;€ Zuschlag sind es nur 2.700&nbsp;€ — 1.350&nbsp;€ weniger. Nach Abzug der Pendlerpauschale von 2.185&nbsp;€ bleiben nur <strong>515&nbsp;€</strong> Vorteil aus den Arbeitswegen übrig, und der zu versteuernde Vorteil insgesamt sinkt auf <strong>5.915&nbsp;€ im Jahr</strong> (5.400&nbsp;€ + 515&nbsp;€). Bei 30&nbsp;% Grenzsteuersatz sind das rund 1.774,50&nbsp;€ Steuer — noch einmal rund 405&nbsp;€ weniger als mit der pauschalen 0,03%-Regel. Die Einzelfahrtenbewertung lohnt sich immer dann, wenn Sie an weniger als 15 Tagen im Monat zur Arbeit fahren. Teilen Sie die Entscheidung Ihrem Arbeitgeber mit — er muss sie in der Lohnabrechnung umsetzen.</p>
+
+      <h2 id="elektro">E-Dienstwagen: Die 0,25%-Regel</h2>
+      <p>Für einen reinen <strong>Elektro-Dienstwagen</strong> mit einem Bruttolistenpreis bis 70.000&nbsp;€ gilt statt der 1%-Regel die <strong>0,25%-Regel</strong>: Der geldwerte Vorteil beträgt nur ein Viertel des normalen Satzes. Auch der Zuschlag für die Fahrten zur Arbeit wird auf den geviertelten Listenpreis berechnet. Unser Beispiel als E-Auto — 45.000&nbsp;€ Listenpreis, 25&nbsp;km:</p>
+      <div class="formula"><b>45.000 € × 0,25 % = 112,50 € pro Monat = 1.350 € pro Jahr (statt 450 € / 5.400 €)</b></div>
+      <div class="formula"><b>11.250 € (geviertelter Listenpreis) × 0,03 % × 25 km = 84,38 € pro Monat = 1.012,50 € pro Jahr</b></div>
+      <p>Der Zuschlag von 1.012,50&nbsp;€ wird von der Pendlerpauschale von 2.185&nbsp;€ vollständig ausgeglichen — es bleibt nichts übrig. Der zu versteuernde Vorteil insgesamt beträgt also nur <strong>1.350&nbsp;€ im Jahr</strong>, gegenüber 7.265&nbsp;€ beim Verbrenner mit demselben Listenpreis. Das sind 5.915&nbsp;€ weniger zu versteuernder Vorteil — bei 30&nbsp;% Grenzsteuersatz rund <strong>1.774,50&nbsp;€ Steuerersparnis im Jahr</strong>. Für <strong>Plug-in-Hybride</strong> gilt die <strong>0,5%-Regel</strong> — die Hälfte des normalen Satzes: 45.000&nbsp;€ × 0,5&nbsp;% = 225&nbsp;€ im Monat. Die 0,25%-Regel ist damit einer der stärksten Anreize für einen E-Dienstwagen — sie wirkt jedes Jahr, nicht nur im Anschaffungsjahr. Beachten Sie: Der geviertelte Listenpreis gilt nur, wenn das Fahrzeug die Voraussetzungen erfüllt; Ihr Arbeitgeber kennt die Einstufung.</p>
+
+      <h2 id="vergleich">Vergleichstabelle: Verbrenner, Hybrid, E-Auto</h2>
+      <p>Alle drei Antriebe im direkten Vergleich — Dienstwagen 45.000&nbsp;€ Listenpreis, 25&nbsp;km Arbeitsweg, 230 Arbeitstage, Sätze 2026:</p>
+      <table class="data">
+        <tr><th>Antrieb</th><th>Regel (privat)</th><th>1 %-Anteil / Jahr</th><th>Zuschlag / Jahr</th><th>Nach Pauschale zu versteuern</th></tr>
+        <tr><td><strong>Verbrenner</strong></td><td>1 %</td><td>5.400 €</td><td>4.050 €</td><td><strong>7.265 €</strong></td></tr>
+        <tr><td>Plug-in-Hybrid</td><td>0,5 %</td><td>2.700 €</td><td>2.025 €</td><td><strong>2.700 €</strong></td></tr>
+        <tr><td><strong>E-Auto</strong></td><td><strong>0,25 %</strong></td><td><strong>1.350 €</strong></td><td><strong>1.012,50 €</strong></td><td><strong>1.350 €</strong></td></tr>
+      </table>
+      <p>Beim Plug-in-Hybrid halbiert sich auch der Zuschlag (auf den halbierten Listenpreis von 22.500&nbsp;€ berechnet: 2.025&nbsp;€), und nach Abzug der Pauschale von 2.185&nbsp;€ bleibt vom Zuschlag nichts übrig — zu versteuern sind nur die 2.700&nbsp;€ aus der 0,5%-Regel. Die Tabelle zeigt: Der Antrieb entscheidet mehr über die Steuer als der Listenpreis. Ein E-Dienstwagen mit 45.000&nbsp;€ Listenpreis kostet steuerlich weniger als ein Verbrenner mit 35.000&nbsp;€ Listenpreis (7.265&nbsp;€ zu versteuernder Vorteil beim 45.000-€-Verbrenner, aber ein 35.000-€-Verbrenner mit 20&nbsp;km liegt bei 6.720&nbsp;€ Vorteil vor Pauschale — und nach Pauschale immer noch über dem E-Auto). Wer die Wahl hat, sollte den Antrieb in die Entscheidung einbeziehen — nicht nur den Listenpreis.</p>
+
+      <h2 id="fahrtenbuch">Fahrtenbuch statt 1%-Regel?</h2>
+      <p>Die 1%-Regel ist eine Pauschale — und Pauschalen sind nur dann günstig, wenn die tatsächliche Nutzung ungefähr dem Durchschnitt entspricht. Wer privat wenig fährt und ein teures Auto hat, versteuert mit der 1%-Regel oft deutlich mehr, als die tatsächliche Privatnutzung wert ist. Die Alternative ist das <strong>Fahrtenbuch</strong>: Statt 1&nbsp;% des Listenpreises wird der tatsächliche private Anteil der Gesamtkosten versteuert — nachgewiesen durch ein lückenloses, zeitnah geführtes Fahrtenbuch mit Datum, Kilometerstand, Ziel und Anlass jeder Fahrt.</p>
+      <p>Ob sich das lohnt, hängt von zwei Zahlen ab: dem Listenpreis und dem privaten Anteil. Ein Beispiel aus unserem Vergleichsartikel: Dienstwagen 40.000&nbsp;€, 30&nbsp;km Arbeitsweg — 1%-Regel plus 0,03%-Regel ergeben 9.120&nbsp;€ Vorteil im Jahr. Zeigt das Fahrtenbuch nur 20&nbsp;% Privatnutzung bei 9.600&nbsp;€ Gesamtkosten, sind es nur 1.920&nbsp;€ — also 7.200&nbsp;€ weniger zu versteuernder Vorteil. Das Fahrtenbuch lohnt sich also vor allem bei teuren Autos und wenig Privatfahrten — und es kostet Disziplin: Nachträgliche Änderungen, Schätzungen oder Lücken führen dazu, dass das Finanzamt das Fahrtenbuch verwirft und die 1%-Regel anwendet. Den vollständigen Vergleich — mit beiden Beispielrechnungen und einer Entscheidungshilfe — finden Sie in unserem Artikel <a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch vs. Pendlerpauschale 2026</a>. Beachten Sie: Auch mit Fahrtenbuch steht Ihnen die Pendlerpauschale für die Arbeitswege zu.</p>
+
+      <h2 id="anlage-n">Anlage N: So wird der Dienstwagen eingetragen</h2>
+      <p>Die Pendlerpauschale gehört als Werbungskosten in die <strong>Anlage&nbsp;N</strong> zur Einkommensteuererklärung — auch mit Dienstwagen. So gehen Sie vor:</p>
+      <ol>
+        <li><strong>Anlage&nbsp;N öffnen</strong> und zum Abschnitt <em>Wege zwischen Wohnung und erster Tätigkeitsstätte</em> scrollen.</li>
+        <li><strong>Entfernung eintragen:</strong> die einfache Strecke in vollen Kilometern angeben — nicht die Hin- und Rückfahrt, nur eine Strecke.</li>
+        <li><strong>Pendeltage eintragen:</strong> nur die Tage, an denen Sie tatsächlich gefahren sind. ELSTER berechnet die Pauschale automatisch mit dem dann geltenden Satz (2026: 0,38&nbsp;€).</li>
+        <li><strong>Geldwerten Vorteil prüfen:</strong> Der Vorteil aus der 1%-Regel und der 0,03%-Regel steht bereits auf Ihrer Lohnsteuerbescheinigung (Zeile 3, Bruttoarbeitslohn) — er ist in Ihrem zu versteuernden Einkommen schon enthalten. Die Pendlerpauschale in der Anlage&nbsp;N mindert ihn als Werbungskosten.</li>
+        <li><strong>Einzelfahrten angeben:</strong> Wenn Sie die Einzelfahrtenbewertung nutzen, teilen Sie das Ihrem Arbeitgeber mit — er setzt sie in der Lohnabrechnung um. In der Steuererklärung selbst gibt es dafür kein eigenes Feld.</li>
+      </ol>
+      <p>Die ausführliche Schritt-für-Schritt-Anleitung — inklusive der häufigsten Nachfragen des Finanzamts — finden Sie in unserer Anleitung zur <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Pendlerpauschale in der Steuererklärung: Anlage&nbsp;N</a>. Die Steuererklärung für das Steuerjahr 2026 geben Sie im Jahr 2027 ab.</p>
+
+      <h2 id="fehler">Die 5 häufigsten Fehler</h2>
+      <ol>
+        <li><strong>Pendlerpauschale beim Dienstwagen vergessen:</strong> Viele Dienstwagen-Fahrer setzen die Pauschale gar nicht an, weil sie denken, der Arbeitgeber hätte schon alles berücksichtigt. Dabei mindert sie den Zuschlag aus der 0,03%-Regel — in unserem Beispiel um 2.185&nbsp;€ im Jahr.</li>
+        <li><strong>Pauschale auf den 1%-Anteil angerechnet:</strong> Die Pendlerpauschale mindert nur den Zuschlag für die Arbeitswege, nicht den 1%-Anteil für die private Nutzung. Wer beides verrechnet, rechnet sich die Steuerersparnis zu hoch.</li>
+        <li><strong>0,03%-Regel trotz Homeoffice:</strong> Wer fast nur im Homeoffice arbeitet, zahlt mit der pauschalen 0,03%-Regel für Fahrten, die nie stattfinden. Die Einzelfahrtenbewertung (0,002&nbsp;% je Fahrt) ist dann fast immer günstiger.</li>
+        <li><strong>Bruttolistenpreis unterschätzt:</strong> Der Listenpreis bei Erstzulassung inklusive Sonderausstattung zählt — nicht der Kaufpreis mit Rabatt und nicht der Zeitwert. Wer mit dem falschen Preis rechnet, rechnet den Vorteil falsch.</li>
+        <li><strong>Hin- und Rückfahrt statt einfacher Strecke:</strong> Die Pauschale gilt für die einfache Strecke. Wer 25&nbsp;km hin und 25&nbsp;km zurück als 50&nbsp;km ansetzt, verdoppelt die Pauschale — und das Finanzamt korrigiert sie.</li>
+      </ol>
+      <div class="info"><strong>Unser Tipp:</strong> Prüfen Sie einmal im Jahr Ihre Gehaltsabrechnung: Steht dort der geldwerte Vorteil aus der 1%-Regel und der 0,03%-Regel — und haben Sie die Pendlerpauschale in der Anlage&nbsp;N angesetzt? Diese eine Prüfung spart in unserem Beispiel rund 655&nbsp;€ Steuer im Jahr. Berechnen Sie Ihre persönliche Pauschale in unserem <a href="index.html">Pendlerpauschale-Rechner 2026</a>.</div>
+      <p class="small">Hinweis: Dieser Artikel dient der allgemeinen Information und stellt keine Steuerberatung dar. Alle Angaben ohne Gewähr; maßgeblich sind die gesetzlichen Regelungen und Ihr Steuerbescheid. Stand: November 2026.</p>
+    </div>
+
+    <h2 id="faq">Häufige Fragen</h2>
+    <details>
+      <summary>Kann ich die Pendlerpauschale auch mit Dienstwagen ansetzen?</summary>
+      <p>Ja. Die Pendlerpauschale von 0,38 € pro Kilometer ab dem ersten Kilometer steht Ihnen auch mit Dienstwagen als Werbungskosten zu. Sie mindert den steuerpflichtigen Vorteil aus den Fahrten zur ersten Tätigkeitsstätte (die 0,03 %-Regel) — aber nur bis zur Höhe dieses Zuschlags, nicht den 1 %-Anteil für die private Nutzung.</p>
+    </details>
+    <details>
+      <summary>Wie hoch ist der geldwerte Vorteil bei einem Dienstwagen 2026?</summary>
+      <p>Nach der 1 %-Regel beträgt er 1 % des Bruttolistenpreises pro Monat für die private Nutzung, plus 0,03 % des Bruttolistenpreises je Entfernungskilometer und Monat für die Fahrten zur ersten Tätigkeitsstätte. Beispiel: 45.000 € Listenpreis und 25 km Arbeitsweg ergeben 450 € plus 337,50 €, also 787,50 € im Monat — 9.450 € im Jahr, vor Abzug der Pendlerpauschale.</p>
+    </details>
+    <details>
+      <summary>Was gilt für einen E-Dienstwagen 2026?</summary>
+      <p>Für einen reinen Elektro-Dienstwagen mit einem Bruttolistenpreis bis 70.000 € gilt die 0,25 %-Regel statt der 1 %-Regel — also nur ein Viertel des normalen Vorteils. Auch der Zuschlag für die Fahrten zur Arbeit wird auf den geviertelten Listenpreis berechnet. Für Plug-in-Hybride gilt die 0,5 %-Regel.</p>
+    </details>
+    <details>
+      <summary>Lohnt sich die Einzelfahrtenbewertung statt der 0,03 %-Regel?</summary>
+      <p>Ja, wenn Sie selten zur ersten Tätigkeitsstätte fahren. Statt pauschal 0,03 % je Kilometer und Monat werden dann 0,002 % je Kilometer und tatsächlicher Fahrt angesetzt. Bei 45.000 € Listenpreis und 25 km sind das 22,50 € je Fahrt — bei nur 10 Fahrten im Monat also 225 € statt 337,50 €. Voraussetzung ist eine lückenlose Aufzeichnung der Fahrten.</p>
+    </details>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.svg" alt="PendlerRechner Logo" width="34" height="34">PendlerRechner</div>
+        <p>Der unabhängige Pendlerpauschale-Rechner für 2026: Entfernungspauschale berechnen, Neuregelung verstehen, Steuerersparnis schätzen.</p>
+      </div>
+      <div>
+        <h4>Rechner &amp; Ratgeber</h4>
+        <ul>
+          <li><a href="index.html">Pendlerpauschale-Rechner</a></li>
+          <li><a href="pendlerpauschale-2026-neuerung.html">Neuerung 2026</a></li>
+          <li><a href="pendlerpauschale-2027.html">Pendlerpauschale 2027</a></li>
+          <li><a href="pendlerpauschale-dienstwagen-2026.html">Dienstwagen 2026</a></li>
+          <li><a href="pendlerpauschale-teilzeit-2026.html">Teilzeit 2026</a></li>
+          <li><a href="homeoffice-pendlerpauschale-2026.html">Homeoffice 2026</a></li>
+          <li><a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch vs. Pauschale</a></li>
+          <li><a href="pendlerpauschale-steuererklaerung-anlage-n.html">Steuererklärung: Anlage N</a></li>
+          <li><a href="arbeitstage-berechnen.html">Arbeitstage berechnen</a></li>
+          <li><a href="so-funktionierts.html">So funktioniert's</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="cookie-richtlinie.html">Cookie-Richtlinie</a></li>
+          <li><a href="haftungsausschluss.html">Haftungsausschluss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="jahr">2026</span> PendlerRechner. Alle Rechte vorbehalten.</span>
+      <span>Unverbindliche Schätzung – keine Steuerberatung.</span>
+    </div>
+  </div>
+</footer>
+<div class="disclaimer-strip">Alle Berechnungen sind unverbindlich und ohne Gewähr – keine Steuerberatung.</div>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
+  <div class="container">
+    <p>Wir verwenden nur technisch notwendige Speicherung (z.&nbsp;B. Ihre Cookie-Auswahl). Es findet kein Tracking statt. Details in der <a href="cookie-richtlinie.html">Cookie-Richtlinie</a>.</p>
+    <div class="btn-row" style="margin-top:0">
+      <button class="btn" id="cookie-accept">Alle akzeptieren</button>
+      <button class="btn btn-ghost" id="cookie-necessary">Nur notwendige</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
