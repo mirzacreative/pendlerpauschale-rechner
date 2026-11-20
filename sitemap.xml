@@ -66,39 +66,45 @@
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
-<url>
+  <url>
     <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/homeoffice-pendlerpauschale-2026.html</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-</url>
+  </url>
   <url>
-      <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-teilzeit-2026.html</loc>
+    <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-teilzeit-2026.html</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-    <url>
-          <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/fahrtenbuch-vs-pendlerpauschale.html</loc>
-          <lastmod>2026-11-16</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>0.9</priority>
-    </url>
-<url>
-  <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-2027.html</loc>
-  <lastmod>2026-11-17</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-<url>
-  <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-dienstwagen-2026.html</loc>
-  <lastmod>2026-11-18</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/fahrtenbuch-vs-pendlerpauschale.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-2027.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-dienstwagen-2026.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-fristen-belege-2026.html</loc>
     <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-azubis-studenten-2026.html</loc>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
