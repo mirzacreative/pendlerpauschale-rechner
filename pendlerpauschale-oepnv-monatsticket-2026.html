@@ -1,0 +1,324 @@
+<!--
+  DRAFT — NOT PUBLISHED. Do not treat as live.
+  Target repo: mirzacreative/pendlerpauschale-rechner
+  Target filename: pendlerpauschale-oepnv-monatsticket-2026.html
+  Target URL: https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-oepnv-monatsticket-2026.html
+  Post-upload steps (for the publisher): add the URL to sitemap.xml (lastmod 2026-11-26), link it from index.html (guide section), request indexing (Search Console signed in as aivideos146@gmail.com in that run's browser session).
+  NOTE: this draft follows the site's existing template (pendlerpauschale-oepnv-monatsticket-2026.html). 2026 rate 0,38 €/km from the first kilometre; 4.500 € cap for non-car users (ÖPNV, bicycle, car-pool passenger) with the actual-ticket-costs exception — cap verified against the live Anlage N guide page (pendlerpauschale-steuererklaerung-anlage-n.html, fetched live 2026-11-26); the filing guide itself is linked, NOT repeated. NO 2027 rate is stated anywhere — the post explicitly says 2027 rules are not fixed as of November 2026. NO real ticket prices are stated as fact: every ticket-cost example is a clearly labelled illustrative assumption (60/80/120 €/month, 400 €/month for the cap exception); readers are told to recompute with their own ticket price. Examples recomputed in Python with half-up rounding, every multiplication shown: 10 km × 220 days × 0,38 € = 836 €; 15 km × 230 × 0,38 € = 1.311 €; 20 km × 220 × 0,38 € = 1.672 €; 30 km × 220 × 0,38 € = 2.508 €; 40 km × 220 × 0,38 € = 3.344 €; 50 km × 230 × 0,38 € = 4.370 €; 55 km × 230 × 0,38 € = 4.807 € capped to 4.500 €; 60 km × 230 × 0,38 € = 5.244 € capped to 4.500 €; 20 km × 138 × 0,38 € = 1.048,80 € (from the live Teilzeit post's day counts). Cap break-even: 51,49 km at 230 days, 53,83 km at 220 days. Excess over the 1.230 € Werbungskostenpauschbetrag: on 2.508 € = 1.278 € (383,40 € at an illustrative 30% marginal rate); on 3.344 € = 2.114 € (634,20 € at 30%); on capped 4.500 € = 3.270 € (981,00 € at 30%). Links the Anlage N, Fahrtenbuch, Dienstwagen and Teilzeit posts without repeating them.
+  Keyword basis: gap hypothesis (no measured Search Console numbers supplied for this keyword).
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendlerpauschale ÖPNV 2026: Ticket oder Pauschale?</title>
+<meta name="description" content="Pendlerpauschale und ÖPNV 2026: 0,38 €/km ab dem ersten Kilometer, gedeckelt auf 4.500 € — wann die Pauschale das Ticket schlägt und Ticketkosten zählen.">
+<meta name="keywords" content="pendlerpauschale öpnv 2026, pendlerpauschale monatsticket, pendlerpauschale bus bahn, pendlerpauschale 4500 euro grenze, monatsticket steuererklärung">
+<link rel="canonical" href="https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-oepnv-monatsticket-2026.html">
+<link rel="alternate" hreflang="de" href="https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-oepnv-monatsticket-2026.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0e1a3a">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="PendlerRechner">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Pendlerpauschale ÖPNV 2026: Ticket oder Pauschale?">
+<meta property="og:description" content="Pendlerpauschale und ÖPNV 2026: 0,38 € pro Kilometer ab dem ersten Kilometer, gedeckelt auf 4.500 € — Monatsticket oder Pauschale, mit Rechenbeispielen und Vergleich.">
+<meta property="og:url" content="https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-oepnv-monatsticket-2026.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pendlerpauschale ÖPNV 2026: Ticket oder Pauschale?">
+<meta name="twitter:description" content="ÖPNV 2026: Pendlerpauschale von 0,38 € pro Kilometer, gedeckelt auf 4.500 € — wann sie das Monatsticket schlägt und wann Ticketkosten zählen.">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mirzacreative.github.io/pendlerpauschale-rechner/#website",
+      "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/",
+      "name": "PendlerRechner",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-oepnv-monatsticket-2026.html#article",
+      "headline": "Pendlerpauschale ÖPNV 2026: Ticket oder Pauschale?",
+      "description": "Pendlerpauschale und ÖPNV 2026: 0,38 €/km ab dem ersten Kilometer, gedeckelt auf 4.500 € — wann die Pauschale das Ticket schlägt und Ticketkosten zählen.",
+      "inLanguage": "de",
+      "datePublished": "2026-11-26",
+      "dateModified": "2026-11-26",
+      "author": {
+        "@type": "Organization",
+        "name": "PendlerRechner",
+        "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PendlerRechner",
+        "url": "https://mirzacreative.github.io/pendlerpauschale-rechner/"
+      },
+      "mainEntityOfPage": "https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-oepnv-monatsticket-2026.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Start",
+          "item": "https://mirzacreative.github.io/pendlerpauschale-rechner/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Pendlerpauschale und ÖPNV: Monatsticket oder Pauschale 2026",
+          "item": "https://mirzacreative.github.io/pendlerpauschale-rechner/pendlerpauschale-oepnv-monatsticket-2026.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Gilt die Pendlerpauschale auch mit Monatsticket oder Jobticket?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Die Pauschale hängt von Entfernung und Fahrtagen ab, nicht von der Ticketart: 0,38 € pro Kilometer ab dem ersten Kilometer der einfachen Strecke. Beispiel: 30 km an 220 Tagen ergeben 2.508 € im Jahr. Die Ticketart spielt nur beim Vergleich mit den tatsächlichen Ticketkosten und bei der 4.500-€-Grenze eine Rolle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie hoch ist die Grenze für ÖPNV-Fahrer, und wann greift die Ausnahme?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wer kein eigenes Kraftfahrzeug nutzt, kann die Pauschale nur bis zu 4.500 € im Jahr ansetzen. Ausnahme: Sind die tatsächlichen ÖPNV-Ticketkosten höher als 4.500 €, dürfen die tatsächlichen Kosten angesetzt werden. Bei 55 km und 230 Tagen ergibt die Rechnung 4.807 €, gedeckelt auf 4.500 € — es sei denn, die nachgewiesenen Ticketkosten liegen höher."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wann schlägt die Pauschale das Monatsticket — und wann ist das Ticket besser?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vergleichen Sie die gedeckelte Pauschale mit Ihren tatsächlichen Ticketkosten für das Jahr. Mit einer illustrativen Annahme von 80 € im Monat (960 € im Jahr, keine echte Preisangabe) schlägt die Pauschale das Ticket bei 20 km ab 127 Fahrtagen und bei 30 km ab 85 Fahrtagen. Rechnen Sie den Vergleich mit Ihrem eigenen Ticketpreis nach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wo trage ich die Pendlerpauschale mit ÖPNV in der Steuererklärung ein?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In der Anlage N, mit einfacher Entfernung, Fahrtagen und Verkehrsmittel je erster Tätigkeitsstätte. Die genaue Anleitung steht in der Anlage-N-Übersicht auf dieser Website. Für 2027 ist Stand November 2026 noch kein neuer Satz festgelegt."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="PendlerRechner Logo" width="38" height="38">PendlerRechner</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Rechner</a></li>
+        <li><a href="pendlerpauschale-2026-neuerung.html">Neuerung 2026</a></li>
+        <li><a href="pendlerpauschale-2027.html">Pauschale 2027</a></li>
+        <li><a href="pendlerpauschale-dienstwagen-2026.html">Dienstwagen 2026</a></li>
+        <li><a href="pendlerpauschale-fristen-belege-2026.html">Fristen &amp; Belege 2026</a></li>
+        <li><a href="pendlerpauschale-azubis-studenten-2026.html">Azubis &amp; Studenten 2026</a></li>
+        <li><a href="pendlerpauschale-fahrgemeinschaft-2026.html">Fahrgemeinschaft 2026</a></li>
+        <li><a href="pendlerpauschale-umzug-wohnortwechsel-2026.html">Umzug 2026</a></li>
+        <li><a href="pendlerpauschale-grenzgaenger-2026.html">Grenzgänger 2026</a></li>
+        <li><a href="pendlerpauschale-teilzeit-2026.html">Teilzeit 2026</a></li>
+        <li><a href="pendlerpauschale-schichtarbeiter-2026.html">Schichtarbeiter 2026</a></li>
+        <li><a href="pendlerpauschale-oepnv-monatsticket-2026.html" class="active">ÖPNV &amp; Monatsticket 2026</a></li>
+        <li><a href="homeoffice-pendlerpauschale-2026.html">Homeoffice 2026</a></li>
+        <li><a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch vs. Pauschale</a></li>
+        <li><a href="arbeitstage-berechnen.html">Arbeitstage</a></li>
+        <li><a href="so-funktionierts.html">So funktioniert's</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-compact">
+  <div class="container">
+    <span class="badge">ÖPNV · MONATSTICKET · 2026</span>
+    <h1>Pendlerpauschale und ÖPNV: Monatsticket oder Pauschale 2026</h1>
+    <p class="lead">Wer mit Bus und Bahn pendelt, bekommt die Pendlerpauschale 2026 genauso wie Autofahrer: <strong>0,38&nbsp;€ pro Kilometer ab dem ersten Kilometer</strong> der einfachen Strecke — aber mit einer Grenze, die Autofahrer nicht trifft: Ohne eigenes Kraftfahrzeug ist die Pauschale auf <strong>4.500&nbsp;€ im Jahr</strong> gedeckelt, es sei denn, die tatsächlichen Ticketkosten sind höher. Beispiele: <strong>30 km × 220 Tage × 0,38&nbsp;€ = 2.508&nbsp;€</strong>, <strong>50 km × 230 Tage × 0,38&nbsp;€ = 4.370&nbsp;€</strong> (noch unter der Grenze) und <strong>55 km × 230 Tage × 0,38&nbsp;€ = 4.807&nbsp;€, gedeckelt auf 4.500&nbsp;€</strong>. Wann die Pauschale das Monatsticket schlägt, wann die Ticketkosten zählen — und wie Sie die beiden Zahlen richtig vergleichen.</p>
+  </div>
+</section>
+
+<main class="container" id="inhalt">
+  <div class="section">
+    <div class="breadcrumbs"><a href="index.html">Start</a> › Pendlerpauschale und ÖPNV: Monatsticket oder Pauschale 2026</div>
+    <div class="card article">
+<div class="toc">
+<strong>Inhalt</strong>
+<ul>
+<li><a href="#antwort">Die Antwort in Kürze</a></li>
+<li><a href="#grundregel">Wie die Pauschale für ÖPNV-Fahrer funktioniert</a></li>
+<li><a href="#beispiele">Rechenbeispiele: Von 10 bis 60 Kilometern</a></li>
+<li><a href="#vergleich">Pauschale oder Ticketkosten: Der Vergleich</a></li>
+<li><a href="#grenze">Die 4.500-€-Grenze im Detail</a></li>
+<li><a href="#ticketarten">Monatsticket, Jobticket, Einzeltickets</a></li>
+<li><a href="#kombinationen">Kombinationen: Bahn, Auto, Fahrgemeinschaft, Teilzeit</a></li>
+<li><a href="#tage">Tage zählen: Nur gefahrene Tage</a></li>
+<li><a href="#fehler">Die 5 häufigsten Fehler</a></li>
+<li><a href="#ausblick">Was 2027 bringt — und was nicht</a></li>
+<li><a href="#faq">Häufige Fragen</a></li>
+</ul>
+</div>
+
+<h2 id="antwort">Die Antwort in Kürze</h2>
+<p>Die Pendlerpauschale — amtlich Entfernungspauschale — hängt nicht vom Verkehrsmittel ab, sondern von drei Grössen: der <strong>einfachen Entfernung</strong> von der Wohnung zur ersten Tätigkeitsstätte, der <strong>Zahl der Tage</strong>, an denen tatsächlich gefahren wurde, und dem <strong>Satz von 0,38&nbsp;€ pro Kilometer ab dem ersten Kilometer</strong> im Steuerjahr 2026. Wer mit Bus und Bahn fährt, setzt dieselbe Rechnung an wie ein Autofahrer: Entfernung × 0,38&nbsp;€ × Fahrtage. Der Unterschied liegt in der Obergrenze: Wer kein eigenes Kraftfahrzeug nutzt — also mit ÖPNV, Fahrrad oder als Mitfahrer unterwegs ist —, kann die Pauschale nur bis zu <strong>4.500&nbsp;€ im Jahr</strong> ansetzen. Die Ausnahme ist wichtig und wird oft übersehen: Sind die tatsächlichen ÖPNV-Ticketkosten höher als 4.500&nbsp;€, dürfen die tatsächlichen Kosten angesetzt werden. Die Grenze und die Ausnahme stehen in unserer Übersicht zur <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Steuererklärung mit Anlage N</a>, die auch erklärt, wo die Angaben in der Erklärung hingehören — die Ausfüllanleitung selbst wird hier nicht wiederholt. Drei Beispiele zeigen die Grössenordnung: Bei 30 km einfacher Strecke und 220 gefahrenen Tagen ergibt die Pauschale <strong>2.508&nbsp;€</strong> im Jahr (30 × 220 × 0,38), bei 50 km und 230 Tagen <strong>4.370&nbsp;€</strong> (50 × 230 × 0,38) — noch unter der Grenze — und bei 55 km und 230 Tagen rechnerisch <strong>4.807&nbsp;€</strong> (55 × 230 × 0,38), die auf <strong>4.500&nbsp;€</strong> gedeckelt werden: 307&nbsp;€ der rechnerischen Pauschale fallen dann weg, es sei denn, die tatsächlichen Ticketkosten liegen höher. Den Rechner selbst finden Sie auf der <a href="index.html">Startseite</a>. Entscheidend ist der Vergleich, den dieser Artikel in den Mittelpunkt stellt: Die Pauschale ist keine Erstattung des Ticketpreises, sondern ein Werbungskostenansatz. Ob sie sich lohnt, entscheidet der Vergleich mit den eigenen Ticketkosten — mit den tatsächlichen Kosten Ihres Tickets, nicht mit einem Durchschnitt aus dem Internet.</p>
+
+<h2 id="grundregel">Wie die Pauschale für ÖPNV-Fahrer funktioniert</h2>
+<p>Für die Entfernungspauschale gelten für ÖPNV-Fahrer dieselben drei Grössen wie für alle anderen Pendler. Erstens die <strong>einfache Entfernung</strong>: die kürzeste Strassenverbindung zwischen Wohnung und erster Tätigkeitsstätte, in vollen Kilometern — nicht Hin- und Rückweg, und nicht die tatsächlich gefahrene Strecke mit Umwegen oder Umstiegen. Wer 30 km von der Wohnung bis zum Betrieb hat, setzt 30 km an, auch wenn die Bahnstrecke mit Umweg länger ist. Zweitens die <strong>Zahl der Fahrtage</strong>: Es zählen nur Tage, an denen tatsächlich zur ersten Tätigkeitsstätte gefahren wurde — Urlaub, Krankheit und Homeoffice-Tage fallen heraus, wie weiter unten erklärt. Drittens der <strong>Satz von 0,38&nbsp;€</strong> ab dem ersten Kilometer, der seit 2026 einheitlich gilt; die alte Staffelung mit 0,30&nbsp;€ bis Kilometer 20 ist abgeschafft. Zwei Punkte unterscheiden den ÖPNV-Fall vom Autofahrer-Fall. Der erste ist die <strong>4.500-€-Obergrenze</strong>: Sie greift, wenn kein eigenes Kraftfahrzeug genutzt wird, und sie wird im Abschnitt zur Grenze im Detail erklärt. Der zweite ist die <strong>Angabe des Verkehrsmittels</strong> in der Steuererklärung: Sie entscheidet unter anderem, ob die Obergrenze greift — in der Anlage N wird das Verkehrsmittel je Tätigkeitsstätte angegeben, wie die <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Anlage-N-Übersicht</a> erklärt. Was die Pauschale ausdrücklich nicht ist: eine Erstattung des Ticketpreises. Der Ticketpreis spielt für die Höhe der Pauschale keine Rolle — ob das Ticket günstig oder teuer ist, ändert an Entfernung × 0,38&nbsp;€ × Tage nichts. Der Ticketpreis wird erst an zwei Stellen wichtig: beim Vergleich, ob sich die Pauschale gegenüber den Ticketkosten lohnt, und bei der Ausnahme von der 4.500-€-Grenze, wenn die tatsächlichen Ticketkosten höher sind als die gedeckelte Pauschale. Wer also ein Ticket besitzt, setzt die Pauschale genauso an wie jemand ohne Ticket, der dieselbe Strecke fährt — und wer gar kein Ticket besitzt, weil er beispielsweise zu Fuss zur Arbeit geht oder mit dem Fahrrad fährt, fällt unter dieselbe Obergrenze, weil auch dann kein eigenes Kraftfahrzeug genutzt wird.</p>
+
+<h2 id="beispiele">Rechenbeispiele: Von 10 bis 60 Kilometern</h2>
+<p>Die Rechnung ist immer dieselbe: Entfernung × 0,38&nbsp;€ × Fahrtage — und für ÖPNV-Fahrer danach der Vergleich mit der Grenze von 4.500&nbsp;€. Acht Beispiele zeigen, wo die Pauschale landet, vom kurzen Weg bis zum weiten Weg, an dem die Grenze zuschlägt:</p>
+<table class="data">
+<tr><th>Arbeitsweg (einfach)</th><th>Gefahrene Tage</th><th>Rechnung</th><th>Pendlerpauschale 2026</th><th>Nach 4.500-€-Grenze</th></tr>
+<tr><td>10 km</td><td>220 Tage</td><td>10 × 220 × 0,38 €</td><td><strong>836 €</strong></td><td>836 €</td></tr>
+<tr><td>15 km</td><td>230 Tage</td><td>15 × 230 × 0,38 €</td><td><strong>1.311 €</strong></td><td>1.311 €</td></tr>
+<tr><td>20 km</td><td>220 Tage</td><td>20 × 220 × 0,38 €</td><td><strong>1.672 €</strong></td><td>1.672 €</td></tr>
+<tr><td>30 km</td><td>220 Tage</td><td>30 × 220 × 0,38 €</td><td><strong>2.508 €</strong></td><td>2.508 €</td></tr>
+<tr><td>40 km</td><td>220 Tage</td><td>40 × 220 × 0,38 €</td><td><strong>3.344 €</strong></td><td>3.344 €</td></tr>
+<tr><td>50 km</td><td>230 Tage</td><td>50 × 230 × 0,38 €</td><td><strong>4.370 €</strong></td><td>4.370 €</td></tr>
+<tr><td>55 km</td><td>230 Tage</td><td>55 × 230 × 0,38 €</td><td>4.807 €</td><td><strong>4.500 €</strong></td></tr>
+<tr><td>60 km</td><td>230 Tage</td><td>60 × 230 × 0,38 €</td><td>5.244 €</td><td><strong>4.500 €</strong></td></tr>
+</table>
+<p>Pro Fahrtag gerechnet sind das 3,80&nbsp;€ bei 10 km, 5,70&nbsp;€ bei 15 km, 7,60&nbsp;€ bei 20 km, 11,40&nbsp;€ bei 30 km, 15,20&nbsp;€ bei 40 km und 19,00&nbsp;€ bei 50 km — und rechnerisch 20,90&nbsp;€ bei 55 km, die durch die Grenze auf effektiv 19,57&nbsp;€ pro Tag (4.500&nbsp;€ ÷ 230 Tage) sinken. Auf den Monat umgelegt sind 2.508&nbsp;€ im Jahr etwa 209,00&nbsp;€ pro Monat, 3.344&nbsp;€ etwa 278,67&nbsp;€ und die gedeckelten 4.500&nbsp;€ genau 375,00&nbsp;€ — aber Vorsicht: Die Pauschale ist ein Jahreswert, keine monatliche Erstattung, und die Steuerwirkung hängt davon ab, ob die Werbungskosten insgesamt über dem Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€ liegen. Ein Beispiel zur Einordnung, mit einem beispielhaften Grenzsteuersatz von 30&nbsp;% — Ihr eigener Satz kann höher oder niedriger sein: Wer auf 2.508&nbsp;€ Pauschale kommt, liegt 1.278&nbsp;€ über dem Pauschbetrag, das sind rund 383,40&nbsp;€ Steuerersparnis im Jahr. Wer auf 3.344&nbsp;€ kommt, liegt 2.114&nbsp;€ darüber — rund 634,20&nbsp;€ Steuerersparnis bei 30&nbsp;%. Und wer an der Grenze von 4.500&nbsp;€ landet, liegt 3.270&nbsp;€ über dem Pauschbetrag — rund 981,00&nbsp;€ Steuerersparnis bei demselben beispielhaften Satz. Wer dagegen nur 836&nbsp;€ Pauschale hat — 10 km an 220 Tagen — und keine weiteren Werbungskosten, bleibt unter dem Pauschbetrag von 1.230&nbsp;€ und spart durch die Pauschale allein nichts; erst zusammen mit anderen Werbungskosten, etwa Arbeitsmitteln oder Fortbildung, wird sie wirksam. Zwei Details werden oft falsch gemacht: Erstens zählt nur die <strong>einfache Strecke</strong>, nicht Hin- und Rückweg — wer 30 km zum Arbeitsort fährt, setzt 30 km an, nicht 60. Zweitens zählt die Pauschale pro Tag für die einfache Strecke, nicht pro Fahrt: Wer an einem Tag mit Umstieg zweimal in Bus und Bahn sitzt, setzt die Strecke einmal an. Wie viele Arbeitstage Sie im Jahr 2026 ansetzen können, berechnet unser <a href="arbeitstage-berechnen.html">Arbeitstage-Rechner</a>.</p>
+
+<h2 id="vergleich">Pauschale oder Ticketkosten: Der Vergleich</h2>
+<p>Die Frage, die ÖPNV-Pendler am meisten beschäftigt, lautet: Lohnt sich die Pauschale, oder sind meine Ticketkosten höher? Die Antwort folgt aus einem einfachen Vergleich: Stellen Sie die — gegebenenfalls gedeckelte — Pauschale Ihren tatsächlichen Ticketkosten für das Jahr gegenüber. Ist die Pauschale höher, ist sie der bessere Ansatz; sind die tatsächlichen Ticketkosten höher als die gedeckelte Pauschale, dürfen die tatsächlichen Kosten angesetzt werden. Der Vergleich braucht Ihre eigenen Zahlen: den Ticketpreis, den Sie wirklich zahlen, und die Zahl der Monate, in denen Sie das Ticket wirklich für den Arbeitsweg genutzt haben. In diesem Artikel stehen keine echten Ticketpreise — die Preise unterscheiden sich nach Verkehrsverbund, Strecke und Ticketart, und eine Zahl aus dem Internet wäre für Ihren Fall fast sicher falsch. Stattdessen arbeitet der Vergleich unten mit <strong>illustrativen Annahmen, die ausdrücklich als Annahmen gekennzeichnet sind</strong>: Rechnen Sie die Tabelle mit Ihrem eigenen Ticketpreis nach, bevor Sie eine Entscheidung treffen. Die Faustformel für den Vergleich lautet: Pauschale pro Jahr = Entfernung × 0,38&nbsp;€ × Fahrtage, gedeckelt auf 4.500&nbsp;€. Die Ticketkosten pro Jahr = Monatspreis × Zahl der Monate. Die Pauschale schlägt die Ticketkosten, sobald Entfernung × 0,38&nbsp;€ × Fahrtage grösser ist als der Jahrespreis des Tickets.</p>
+<table class="data">
+<tr><th>Illustrative Annahme: Ticketpreis</th><th>Ticketkosten / Jahr</th><th>Ab wie vielen Fahrtagen schlägt die Pauschale das Ticket?</th></tr>
+<tr><td>60 € / Monat (Annahme)</td><td>720 €</td><td>10 km: ab 190 Tagen · 15 km: ab 127 Tagen · 20 km: ab 95 Tagen</td></tr>
+<tr><td>80 € / Monat (Annahme)</td><td>960 €</td><td>20 km: ab 127 Tagen · 30 km: ab 85 Tagen · 40 km: ab 64 Tagen</td></tr>
+<tr><td>120 € / Monat (Annahme)</td><td>1.440 €</td><td>20 km: ab 190 Tagen · 30 km: ab 127 Tagen · 40 km: ab 95 Tagen</td></tr>
+</table>
+<p>Die Tageszahlen ergeben sich aus der Division: 720&nbsp;€ ÷ (10 km × 0,38&nbsp;€) = 189,5 Tage, also ab 190 Tagen; 960&nbsp;€ ÷ (20 km × 0,38&nbsp;€) = 126,3 Tage, also ab 127 Tagen; 1.440&nbsp;€ ÷ (30 km × 0,38&nbsp;€) = 126,3 Tage, also ab 127 Tagen; 1.440&nbsp;€ ÷ (20 km × 0,38&nbsp;€) = 189,5 Tage, also ab 190 Tagen. Zwei Lehren aus der Tabelle — beide gelten nur mit Ihrem eigenen Ticketpreis. Erstens: Bei mittleren und weiten Wegen schlägt die Pauschale ein Monatsticket fast immer, sobald regelmässig gefahren wird: Bei 30 km und der Annahme von 80&nbsp;€ im Monat reichen schon 85 Fahrtage, und ein Vollzeitpendler mit 220 Tagen liegt mit 2.508&nbsp;€ Pauschale weit über den angenommenen 960&nbsp;€ Ticketkosten. Zweitens: Bei kurzen Wegen und teuren Tickets kann es umgekehrt sein: Bei 10 km und der Annahme von 120&nbsp;€ im Monat — 1.440&nbsp;€ im Jahr — liegt die Pauschale mit 836&nbsp;€ bei 220 Tagen deutlich darunter, und dann sind die tatsächlichen Ticketkosten der bessere Ansatz, sofern sie nachgewiesen werden können. Der dritte Fall ist der Grenzfall: Liegt die Pauschale über 4.500&nbsp;€, wird sie gedeckelt — und genau dann lohnt der Blick auf die tatsächlichen Ticketkosten besonders, weil sie die einzige Möglichkeit sind, über die Grenze hinauszukommen. Wichtig ist auch der Blick auf das ganze Jahr: Wer das Ticket nur in manchen Monaten nutzt — etwa wegen Homeoffice-Phasen, Elternzeit oder eines Wechsels des Arbeitsorts —, rechnet die Ticketkosten nur für die Monate, in denen das Ticket tatsächlich für den Arbeitsweg bezahlt wurde, und die Fahrtage nur für die Tage, an denen tatsächlich gefahren wurde. Beide Seiten des Vergleichs folgen also derselben Regel: nur tatsächlich gefahrene Tage, nur tatsächlich bezahlte Monate. Und ein letzter Hinweis zum Vergleich selbst: Die Pauschale wirkt sich steuerlich nur aus, wenn die gesamten Werbungskosten über dem Arbeitnehmer-Pauschbetrag von 1.230&nbsp;€ liegen — wer unter der Grenze bleibt, spart durch die Pauschale allein nichts, egal wie der Vergleich mit dem Ticket ausgeht.</p>
+
+<h2 id="grenze">Die 4.500-€-Grenze im Detail</h2>
+<p>Die 4.500-€-Obergrenze ist die wichtigste Sonderregel für ÖPNV-Pendler — und die, die am häufigsten übersehen wird. Sie gilt für alle, die kein eigenes Kraftfahrzeug nutzen: ÖPNV-Fahrer, Fahrradfahrer und Mitfahrer in einer Fahrgemeinschaft. Autofahrer sind von der Grenze nicht betroffen: Wer mit dem eigenen Auto fährt, kann die Pauschale auch über 4.500&nbsp;€ hinaus in voller Höhe ansetzen. Die Grenze greift also nicht an der Entfernung, sondern am Verkehrsmittel — und sie greift pro Person und Jahr für die Wege zur ersten Tätigkeitsstätte. Rechnerisch erreicht man die Grenze bei 230 Fahrtagen ab 51,49 km einfacher Strecke (4.500&nbsp;€ ÷ (0,38&nbsp;€ × 230 Tage) = 51,49 km) und bei 220 Fahrtagen ab 53,83 km (4.500&nbsp;€ ÷ (0,38&nbsp;€ × 220 Tage) = 53,83 km). Wer weiter fährt als diese Schwelle, bekommt für jeden weiteren Kilometer keine zusätzliche Pauschale mehr: Bei 60 km und 230 Tagen bleibt es bei 4.500&nbsp;€, obwohl die Rechnung 5.244&nbsp;€ ergibt — 744&nbsp;€ fallen weg. Die Ausnahme ist der Ausweg für genau diesen Fall: Sind die tatsächlichen ÖPNV-Ticketkosten höher als 4.500&nbsp;€, dürfen die tatsächlichen Kosten angesetzt werden. Das setzt voraus, dass die Ticketkosten nachgewiesen werden können — Ticket, Abonnement, Zahlungsbelege — und dass es sich um die Kosten für die Wege zur ersten Tätigkeitsstätte handelt. Ein Beispiel mit einer illustrativen Annahme: Wer ein Ticket für angenommene 400&nbsp;€ im Monat das ganze Jahr nutzt — 4.800&nbsp;€ im Jahr, ausdrücklich eine Annahme, kein echter Preis —, liegt mit den tatsächlichen Kosten über der Grenze und kann 4.800&nbsp;€ ansetzen statt der gedeckelten 4.500&nbsp;€ Pauschale. Wer dagegen ein Ticket für angenommene 80&nbsp;€ im Monat nutzt — 960&nbsp;€ im Jahr —, bleibt weit unter der Grenze, und die Pauschale ist der bessere Ansatz, sobald sie über den Ticketkosten liegt. Die Grenze und die Ausnahme sind in der <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Anlage-N-Übersicht</a> ausführlich erklärt, einschliesslich der Frage, welche Angaben das Finanzamt erwartet; die Ausfüllschritte selbst stehen dort und werden hier bewusst nicht wiederholt. Ein praktischer Rat zum Schluss: Wer nah an der Grenze liegt, sollte beide Zahlen sauber dokumentieren — Entfernung und Fahrtage für die Pauschale, Ticketpreis und Zahlungsbelege für die tatsächlichen Kosten — und erst am Jahresende entscheiden, welcher Ansatz höher ist. Wer die Grenze erst in der Steuererklärung entdeckt, hat die Belege für die Ticketkosten womöglich nicht mehr zur Hand.</p>
+
+<h2 id="ticketarten">Monatsticket, Jobticket, Einzeltickets</h2>
+<p>Für die Pendlerpauschale zählt die Ticketart nicht — es zählen Entfernung und Fahrtage. Ob Monatsticket, Jobticket, Jahresabonnement oder Einzeltickets: Die Rechnung Entfernung × 0,38&nbsp;€ × Fahrtage bleibt dieselbe, und die 4.500-€-Grenze gilt für alle diese Formen gleich, solange kein eigenes Kraftfahrzeug genutzt wird. Was sich unterscheidet, ist allein die Seite der tatsächlichen Kosten. Wer Einzeltickets kauft, muss die Kosten für das Jahr zusammenzählen — aus den einzelnen Tickets und Zahlungsbelegen —, um sie mit der Pauschale zu vergleichen; wer ein Abonnement hat, multipliziert den Monatspreis mit der Zahl der Monate, in denen das Ticket für den Arbeitsweg bezahlt wurde. Bei einem Jobticket oder einem vom Arbeitgeber bezuschussten Ticket ist Vorsicht geboten: Was der Arbeitgeber zahlt oder bezuschusst, ist eine eigene Frage, die auf der Gehaltsabrechnung steht und die Pauschale nicht automatisch verändert — ob und wie ein Arbeitgeberzuschuss die ansetzbaren Kosten beeinflusst, hängt vom Einzelfall ab und sollte mit den eigenen Unterlagen und der <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Anlage-N-Übersicht</a> geprüft werden, statt pauschal angenommen zu werden. Dieser Artikel nennt bewusst keine Ticketpreise und keine Zuschussregeln als Tatsachen: Die Preise unterscheiden sich nach Verbund und Strecke, und Zuschussmodelle unterscheiden sich nach Arbeitgeber. Drei praktische Punkte gelten für alle Ticketarten. Erstens: Bewahren Sie die Belege auf — Ticket, Abonnement, Kontoauszüge —, falls die tatsächlichen Kosten angesetzt werden sollen oder das Finanzamt nachfragt. Zweitens: Rechnen Sie nur die Monate, in denen das Ticket für den Arbeitsweg genutzt wurde; Monate mit längerer Abwesenheit, Homeoffice oder einem anderen Arbeitsort gehören nicht in den Vergleich. Drittens: Prüfen Sie am Jahresende beide Zahlen — Pauschale und tatsächliche Kosten — und nehmen Sie die höhere, soweit die Regeln das zulassen; die Pauschale ist der Standardansatz, die tatsächlichen Kosten sind die Ausnahme für den Fall, dass sie höher sind als die gedeckelte Pauschale.</p>
+
+<h2 id="kombinationen">Kombinationen: Bahn, Auto, Fahrgemeinschaft, Teilzeit</h2>
+<p>Der Alltag vieler Pendler ist eine Kombination — und für jede Kombination gelten die Grundregeln, aber mit einer eigenen Wendung. Wer mit dem Auto bis zum Bahnhof fährt und dann mit der Bahn weiterfährt, gibt in der Anlage N das Verkehrsmittel der überwiegenden Strecke an, wie die <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Anlage-N-Übersicht</a> erklärt; die Entfernung bleibt die einfache Strecke von der Wohnung bis zur ersten Tätigkeitsstätte, und die Fahrtage sind die Tage, an denen die Strecke tatsächlich gefahren wurde. Wer in einer <a href="pendlerpauschale-fahrgemeinschaft-2026.html">Fahrgemeinschaft</a> mitfährt, setzt weiterhin die eigene Strecke und die eigenen Tage an — auch dann, wenn die gemeinsame Strecke erst ab einem Treffpunkt beginnt: Jeder rechnet ab seiner eigenen Wohnung, und die 4.500-€-Grenze gilt für Mitfahrer genauso wie für ÖPNV-Fahrer, weil kein eigenes Kraftfahrzeug genutzt wird. Wer in <a href="pendlerpauschale-teilzeit-2026.html">Teilzeit</a> arbeitet und nur an manchen Tagen zur Arbeit fährt, rechnet anteilig nach demselben Prinzip: Die Tageszahl folgt den tatsächlich gefahrenen Tagen, nicht den Wochenstunden im Vertrag — bei 20 km und 138 gefahrenen Tagen ergibt das 1.048,80&nbsp;€ (20 × 138 × 0,38), also unter dem Arbeitnehmer-Pauschbetrag, während 20 km an 220 Tagen 1.672&nbsp;€ ergeben. Wer einen <a href="pendlerpauschale-dienstwagen-2026.html">Dienstwagen</a> nutzt, beachtet die eigenen Regeln für Dienstwagen, die in dem verlinkten Beitrag stehen und hier nicht wiederholt werden — ein Punkt ist für ÖPNV-Pendler mit Dienstwagen aber wichtig: Die Pauschale steht auch mit Dienstwagen zu und mindert den steuerpflichtigen Vorteil aus den Arbeitswegen als Werbungskosten, wie der Dienstwagen-Beitrag im Detail erklärt. Und wer ein <a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch</a> führt, braucht es für die Pauschale allein nicht: Das Fahrtenbuch im steuerlichen Sinne ist ein lückenloses Protokoll aller Fahrten mit einem Dienstwagen. Was ÖPNV-Pendler dagegen sehr wohl brauchen können, ist ein einfacher Fahrtage-Nachweis — Dienstplan, Kalender oder eine kurze Liste mit Datum und Strecke —, der bei Nachfragen des Finanzamts schützt. Den vollständigen Vergleich zwischen Fahrtenbuch und Pauschale finden Sie in unserem Artikel zum <a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch im Vergleich zur Pauschale</a>. Wer in <a href="pendlerpauschale-schichtarbeiter-2026.html">Schichten</a> arbeitet und mit Bus und Bahn fährt, zählt die Tage aus dem Dienstplan, Schicht für Schicht — die Pauschale kennt keine Uhrzeit, und eine Fahrt um drei Uhr nachts zählt genauso wie eine Fahrt um acht Uhr morgens.</p>
+
+<h2 id="tage">Tage zählen: Nur gefahrene Tage</h2>
+<p>Die Tageszählung ist bei ÖPNV-Pendlern genauso wichtig wie bei Autofahrern — und die häufigste Fehlerquelle. Es zählen nur die Tage, an denen tatsächlich zur ersten Tätigkeitsstätte gefahren wurde. Nicht mitzählen dürfen Sie Urlaubstage und Feiertage, Krankheitstage, Homeoffice-Tage — für diese gibt es die Homeoffice-Pauschale, nicht die Pendlerpauschale — und Dienstreisen, bei denen Sie nicht zur ersten Tätigkeitsstätte gefahren sind. Als Richtwert akzeptiert das Finanzamt bei einer Fünf-Tage-Woche in der Regel 220 bis 230 Tage ohne längere Nachweise; bei mehr als 230 Tagen sollten Sie die Tage belegen können, etwa über Dienstpläne oder eine Arbeitgeberbescheinigung. Drei praktische Punkte helfen dabei. Erstens: Zählen Sie aus dem Kalender oder Dienstplan, nicht aus dem Gefühl — wer 230 Tage ansetzt, obwohl er nachweislich nur 200 Tage gefahren ist, gibt 30 Tage zu viel an. Zweitens: Trennen Sie Zeiträume mit unterschiedlichem Arbeitsort oder unterschiedlicher Entfernung — wer im laufenden Jahr umzieht oder den Standort wechselt, rechnet jeden Zeitraum für sich, wie der Beitrag zur <a href="pendlerpauschale-umzug-wohnortwechsel-2026.html">Pendlerpauschale bei Umzug und Wohnortwechsel 2026</a> erklärt. Drittens: Notieren Sie die Fahrtage laufend — ein einfacher Kalendereintrag zu Jahresbeginn, Monat für Monat ergänzt, spart am Jahresende viel Rekonstruktion aus dem Gedächtnis. Geeignete Nachweise sind der Dienstplan, eine Arbeitgeberbescheinigung oder die eigenen Aufzeichnungen; das Finanzamt akzeptiert die Pauschale in der Regel ohne Belege, fragt bei hohen Beträgen aber gelegentlich nach. Wer nur an manchen Tagen zur Arbeit fährt, findet die Details in unserer Anleitung zur <a href="pendlerpauschale-teilzeit-2026.html">Pendlerpauschale in Teilzeit 2026</a>.</p>
+
+<h2 id="fehler">Die 5 häufigsten Fehler</h2>
+<p><strong>1. Die 4.500-€-Grenze übersehen.</strong> Wer mit Bus und Bahn 60 km an 230 Tagen fährt und 5.244&nbsp;€ ansetzt, liegt 744&nbsp;€ über der Grenze — es sei denn, die tatsächlichen Ticketkosten sind höher und werden nachgewiesen. Prüfen Sie die Grenze, bevor Sie die Zahl in die Erklärung übernehmen.</p>
+<p><strong>2. Ticketpreis und Pauschale verwechselt.</strong> Die Pauschale ist kein Ticket-Ersatz und keine Erstattung: Sie hängt von Entfernung und Tagen ab, nicht vom Ticketpreis. Wer das Ticket für teurer hält und deshalb die Pauschale gar nicht erst ansetzt, verschenkt Geld — und wer annimmt, die Pauschale erstatte das Ticket, vergleicht die falschen Zahlen.</p>
+<p><strong>3. Hin- und Rückweg gezählt.</strong> Es zählt nur die einfache Strecke — 30 km, nicht 60 km. Wer Hin- und Rückweg ansetzt, verdoppelt die Pauschale zu Unrecht, auch mit dem Monatsticket.</p>
+<p><strong>4. Nicht gefahrene Tage mitgezählt.</strong> Urlaub, Krankheit und Homeoffice-Tage sind keine Fahrtage. Wer 230 Tage angibt, obwohl er nur 200 Tage gefahren ist, übertreibt um 30 Tage und wird bei einer Prüfung nachgefragt.</p>
+<p><strong>5. Alte Staffel in der Software.</strong> Manche älteren Steuerprogramme rechnen noch mit 0,30&nbsp;€ bis Kilometer 20 und 0,38&nbsp;€ erst ab Kilometer 21. Seit 2026 gilt einheitlich 0,38&nbsp;€ ab dem ersten Kilometer — prüfen Sie, ob Ihr Programm den neuen Satz verwendet, sonst verschenken Sie bei kurzen Wegen Geld, gerade im ÖPNV, wo kurze Wege häufig sind.</p>
+
+<h2 id="ausblick">Was 2027 bringt — und was nicht</h2>
+<p>Zum Steuerjahr 2027 gibt es Stand November 2026 <strong>keine festen Regeln</strong>: Weder ein neuer Kilometersatz noch eine Änderung der Entfernungspauschale oder der 4.500-€-Grenze ist beschlossen. Wer im Internet einen „Pendlerpauschale 2027"-Satz findet, sollte misstrauisch sein — bis der Gesetzgeber etwas beschliesst, gibt es keinen neuen Satz, auf den man sich verlassen könnte. Das gilt für ÖPNV-Fahrer genauso wie für alle anderen: Planen Sie Ihre Steuererklärung 2026 mit dem Satz von 0,38&nbsp;€ und der Grenze von 4.500&nbsp;€, und rechnen Sie für 2027 erst dann mit etwas Neuem, wenn es offiziell verkündet wird. Wir aktualisieren unsere Übersicht, sobald der Gesetzgeber die Regeln für 2027 festlegt — die bestehende Übersicht zur <a href="pendlerpauschale-2027.html">Pendlerpauschale 2027</a> wird dann angepasst. Bis dahin gilt: Wer seine Fahrten sauber dokumentiert — Wohnung, Entfernung, Fahrtage, Ticketbelege —, hat 2027 deutlich weniger Arbeit, egal welcher Satz dann gilt.</p>
+
+</div>
+
+</div>
+<h2 id="faq">Häufige Fragen</h2>
+<details>
+<summary>Gilt die Pendlerpauschale auch mit Monatsticket oder Jobticket?</summary>
+<p>Ja. Die Pauschale hängt von Entfernung und Fahrtagen ab, nicht von der Ticketart: 0,38&nbsp;€ pro Kilometer ab dem ersten Kilometer der einfachen Strecke. Beispiel: 30 km an 220 Tagen ergeben 2.508&nbsp;€ im Jahr. Die Ticketart spielt nur beim Vergleich mit den tatsächlichen Ticketkosten und bei der 4.500-€-Grenze eine Rolle.</p>
+</details>
+<details>
+<summary>Wie hoch ist die Grenze für ÖPNV-Fahrer, und wann greift die Ausnahme?</summary>
+<p>Wer kein eigenes Kraftfahrzeug nutzt, kann die Pauschale nur bis zu 4.500&nbsp;€ im Jahr ansetzen. Ausnahme: Sind die tatsächlichen ÖPNV-Ticketkosten höher als 4.500&nbsp;€, dürfen die tatsächlichen Kosten angesetzt werden. Bei 55 km und 230 Tagen ergibt die Rechnung 4.807&nbsp;€, gedeckelt auf 4.500&nbsp;€ — es sei denn, die nachgewiesenen Ticketkosten liegen höher.</p>
+</details>
+<details>
+<summary>Wann schlägt die Pauschale das Monatsticket — und wann ist das Ticket besser?</summary>
+<p>Vergleichen Sie die gedeckelte Pauschale mit Ihren tatsächlichen Ticketkosten für das Jahr. Mit einer illustrativen Annahme von 80&nbsp;€ im Monat (960&nbsp;€ im Jahr, keine echte Preisangabe) schlägt die Pauschale das Ticket bei 20 km ab 127 Fahrtagen und bei 30 km ab 85 Fahrtagen. Bei kurzen Wegen und teuren Tickets können die tatsächlichen Ticketkosten höher sein — rechnen Sie den Vergleich mit Ihrem eigenen Ticketpreis nach.</p>
+</details>
+<details>
+<summary>Wo trage ich die Pendlerpauschale mit ÖPNV in der Steuererklärung ein?</summary>
+<p>In der <a href="pendlerpauschale-steuererklaerung-anlage-n.html">Anlage N</a>, mit einfacher Entfernung, Fahrtagen und Verkehrsmittel je erster Tätigkeitsstätte. Die genaue Anleitung, Zeile für Zeile, steht in der Anlage-N-Übersicht und wird hier nicht wiederholt. Für 2027 ist Stand November 2026 noch kein neuer Satz festgelegt.</p>
+</details>
+
+  </div>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.svg" alt="PendlerRechner Logo" width="34" height="34">PendlerRechner</div>
+        <p>Der unabhängige Pendlerpauschale-Rechner für 2026: Entfernungspauschale berechnen, Neuregelung verstehen, Steuerersparnis schätzen.</p>
+      </div>
+      <div>
+        <h4>Rechner &amp; Ratgeber</h4>
+        <ul>
+          <li><a href="index.html">Pendlerpauschale-Rechner</a></li>
+          <li><a href="pendlerpauschale-2026-neuerung.html">Neuerung 2026</a></li>
+          <li><a href="pendlerpauschale-2027.html">Pendlerpauschale 2027</a></li>
+          <li><a href="pendlerpauschale-dienstwagen-2026.html">Dienstwagen 2026</a></li>
+          <li><a href="pendlerpauschale-fristen-belege-2026.html">Fristen &amp; Belege 2026</a></li>
+          <li><a href="pendlerpauschale-azubis-studenten-2026.html">Azubis &amp; Studenten 2026</a></li>
+          <li><a href="pendlerpauschale-fahrgemeinschaft-2026.html">Fahrgemeinschaft 2026</a></li>
+          <li><a href="pendlerpauschale-umzug-wohnortwechsel-2026.html">Umzug: Wohnortwechsel 2026</a></li>
+          <li><a href="pendlerpauschale-grenzgaenger-2026.html">Grenzgänger 2026</a></li>
+          <li><a href="pendlerpauschale-teilzeit-2026.html">Teilzeit 2026</a></li>
+          <li><a href="pendlerpauschale-schichtarbeiter-2026.html">Schichtarbeiter 2026</a></li>
+          <li><a href="pendlerpauschale-oepnv-monatsticket-2026.html">ÖPNV &amp; Monatsticket 2026</a></li>
+          <li><a href="homeoffice-pendlerpauschale-2026.html">Homeoffice 2026</a></li>
+          <li><a href="fahrtenbuch-vs-pendlerpauschale.html">Fahrtenbuch vs. Pauschale</a></li>
+          <li><a href="pendlerpauschale-steuererklaerung-anlage-n.html">Steuererklärung: Anlage N</a></li>
+          <li><a href="arbeitstage-berechnen.html">Arbeitstage berechnen</a></li>
+          <li><a href="so-funktionierts.html">So funktioniert's</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="cookie-richtlinie.html">Cookie-Richtlinie</a></li>
+          <li><a href="haftungsausschluss.html">Haftungsausschluss</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="jahr">2026</span> PendlerRechner. Alle Rechte vorbehalten.</span>
+      <span>Unverbindliche Schätzung – keine Steuerberatung.</span>
+    </div>
+  </div>
+</footer>
+<div class="disclaimer-strip">Alle Berechnungen sind unverbindlich und ohne Gewähr – keine Steuerberatung.</div>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
+  <div class="container">
+    <p>Wir verwenden nur technisch notwendige Speicherung (z.&nbsp;B. Ihre Cookie-Auswahl). Es findet kein Tracking statt. Details in der <a href="cookie-richtlinie.html">Cookie-Richtlinie</a>.</p>
+    <div class="btn-row" style="margin-top:0">
+      <button class="btn" id="cookie-accept">Alle akzeptieren</button>
+      <button class="btn btn-ghost" id="cookie-necessary">Nur notwendige</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
